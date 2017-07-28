@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "Roti Sans";
+    src: url(fonts/RotisSansSerif/RotisSanSer) format("ps");
+}
+p.customfont { 
+    font-family: "My Custom Font", Verdana, Tahoma;
+}
+
+body, div, p, h1, h2, h3, button {
+	/*font-family: "museo-sans",sans-serif;*/
+	font-family: "Roti Sans", 'Open Sans', sans-serif;
+}
+
+/* Style for our header texts
+* --------------------------------------- */
+h1{
+	font-size: 5em;
+	color: #fff;
+	margin:0;
+	padding:0;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section {
+	
+	overflow: hidden;
+	/*background-color: #001b39;*/
+
+}
+
+
+
+
+#myVideo{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+		background-color: black; /* in case the video doesn't fit the whole page*/
+		background-image: /* our video */;
+		background-position: center center;
+		background-size: contain;
+		object-fit: cover; /*cover video background */
+		z-index:3;
+}
+
+img {
+
+	position: absolute;
+
+}
+
+
+#fullpage div.section {
+
+	background: url(img/hexagon_BG.jpg);
+
+}
+
+#section0 .buttons {
+
+	z-index: 1000;
+	position: absolute;
+	bottom: 39px;
+	right: 103px;
+
+}
+
+#section0 .buttons button {
+
+	width: 245px; 
+	background-color: transparent;
+	border: white 1px solid;
+	font-size: 18px;
+
+}
+#section0 .title-copy {
+
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	color: white;
+	/*background-color: black;*/
+	width: 900px;
+
+}
+
+#section0 .title-copy h1 {
+
+	font-size: 70px;
+	text-align: left;
+
+}
+
+#section0 .title-copy span.blue {
+
+	color: #007dc3;
+
+}
+
+#section0 .title-copy p {
+	color: white;
+	text-align: left;
+	font-size: 13px;
+}
+
+#section0 .ego-logo {
+
+	position: absolute;
+	top: 100px;
+	right: 287px;
+
+}
+
+#section0 .ego-logo img {
+
+	width: 187px;
+
+}
+
+#section0 #that-dude {
+
+	left: 100px; 
+	top: 503px;
+	z-index: 500;
+}
+
+#section0 #timeline-img {
+	
+	left: 1500px;
+	top: 263px;
+	z-index: 499;
+}
+
+.slide .content-container {
+
+	width: 100%;
+	height: 100%;
+	/*background-color: grey;*/
+	padding: 50px 60px 100px 60px;
+
+}
+
+.slide .content-container .content {
+
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 20px;
+	height: 100%;
+	padding: 50px 85px 50px 85px;
+
+}
+
+.slide .content-container .content .header {
+
+	position: relative;
+	font-size: 46px;
+	color: white;
+	width: 100%;
+	top: 0px;
+	/*background-color: grey;*/
+	border-bottom: 3px solid white;
+	text-align: left;
+	text-transform: uppercase;
+
+}
+
+.slide .content-container .content .main-content {
+
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.5);
+	
+}
+
+.slide .content-container .content .main-content .left {
+
+	width: 50%;
+	height: 100%;
+	background-color: rgba(255,255,0,0.5);
+	float: left;
+
+} 
+
+.slide .content-container .content .main-content .right {
+
+	width: 50%;
+	height: 100%;
+	background-color: rgba(255,0,255,0.5);
+	float: right;
+
+} 
+
+.slide .content-container .content .main-content .left .hexagon-container.container1 {
+
+	background-color: red;
+	top: 225px;
+	position: absolute;
+
+}
+
+
+
+.slide .content-container .content .main-content .left .hexagon-container.container3 {
+
+	background-color: red;
+	top: 575px;
+	position: absolute;
+
+}
+
+
+
+
+/* Hiding video controls 
+* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+* --------------------------------------- */
+video::-webkit-media-controls {
+  display:none !important;
+}

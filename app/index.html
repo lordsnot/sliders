@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Background video - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<script src="https://use.typekit.net/hrp5gfb.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!--  -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="examples.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="hexagon.css" /> -->
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: true,
+				// sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+				anchors: ['page1', 'page2', 'page3', 'page4'],
+			});
+			
+			$.fn.fullpage.setMouseWheelScrolling(false);
+    		$.fn.fullpage.setAllowScrolling(false);
+
+			$('#gotoST').click(function() { 
+				$.fn.fullpage.silentMoveTo('page2', 0);
+			});
+
+			$('#gotoCD').click(function() { 
+				$.fn.fullpage.silentMoveTo('page3', 0); 
+			});
+
+			 $("#timeline-img").animate({left: "-=1150", easing: "swing"}, 12000); //25000);
+
+		});
+
+	</script>
+
+
+</head>
+<body>
+
+	<div id="fullpage">
+
+		<div class="section" id="section0">
+
+			<div class="title-copy">
+				<h1>A reputation built on<br/><span class="blue">science and innovation.</span></h1>
+				<p class="copy">
+					At Ego, our mission has always been to bring scientific rigour to skincare. It’s what’s helped us earn an international reputation for
+					delivering effective, high quality and innovative products to manage skin conditions and maintain healthy skin.
+				</p>
+				<p class="copy">
+					Excellence in the quality of everything we do is inherent in our culture. We are always striving to improve our systems, processes 
+					and products. That’s why we invested $75-million – more than half of our sales revenue – in research and development last year.
+				</p>
+				<p class="copy">
+					Strong ethics are also central to our philosophy, particularly with regard to our relationships with health professionals, institutions, '
+					government, our customers and the communities in each of the countries we operate.
+				</p>
+			</div>
+			
+			<div class='ego-logo'><img src="img/ego-logo.png" /></div>
+
+			<img id="that-dude" src="img/that-dude2.png" alt="that dude"/>
+			<img id="timeline-img" src="img/timeline.png" alt="timeline"/>
+
+			<div class="buttons">
+				<button class="btn btn-primary" id="gotoST">Skin Tear</button>
+				<button class="btn btn-primary" id="gotoCD">Contact Dermatitis</button>
+			</div>
+
+		</div>
+
+		<div class="section" id="skin-tear">
+
+		<!-- SKIN TEAR SLIDE 1 -->
+		    <div class="slide" id="st-slide1">
+		    	<div class="content-container">
+		    		<div class="content">
+			    		<div class="header">
+			    			The dual burden of skin tears
+			    		</div>
+			    		<div class="main-content">
+			    			<div class="left">
+			    				<div class='hex gradient-border'>
+								  <span>Some text</span>
+								</div>
+								<div class='hex gradient-bg'>
+								  <span>Some very lengthy text</span>
+								</div>
+								<div class='hex gradient-bg'>
+								  <span>Some very lengthy text
+								  <br/>with line break</span>
+								</div>
+								<div class='hex gradient-bg'>
+								  <span>Some very lengthy text
+								  without line break</span>
+								</div>
+			    			</div>
+			    			<div class="right">
+
+			    			</div>
+			    		</div>
+			    	</div>
+		    	</div>
+		   	</div>
+		<!-- END SKIN TEAR SLIDE 1 -->
+
+		    <div class="slide" id="st-slide2"><h1>Skin Tear 2</h1></div>
+		    <div class="slide" id="st-slide3"><h1>Skin Tear 3</h1></div>
+		    <div class="slide" id="st-slide4"><h1>Skin Tear 4</h1></div>
+		</div>
+		<div class="section" id="contact-dermatitis">
+		    <div class="slide" id="cd-slide1"><h1>Contact Dermatitis 1</h1></div>
+		    <div class="slide" id="cd-slide2"><h1>Contact Dermatitis 2</h1></div>
+		    <div class="slide" id="cd-slide3"><h1>Contact Dermatitis 3</h1></div>
+		    <div class="slide" id="cd-slide4"><h1>Contact Dermatitis 4</h1></div>
+		</div>
+	</div>
+
+</body>
+</html>
