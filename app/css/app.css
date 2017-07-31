@@ -1,12 +1,5 @@
-@font-face {
-  font-family: "Roti Sans";
-  src: url(../fonts/RotisSansSerif/RotisSanSer) format("ps"); }
-
-p.customfont {
-  font-family: "My Custom Font", Verdana, Tahoma; }
-
 body, div, p, h1, h2, h3, button {
-  font-family: "Roti Sans", 'Open Sans', sans-serif; }
+  font-family: "museo-sans"; }
 
 h1 {
   font-size: 5em;
@@ -107,6 +100,40 @@ img {
         width: 50%;
         height: 100%;
         float: left; }
+        .slide .content-container .content .main-content .left .hex-copy {
+          position: absolute;
+          width: 250px;
+          color: white;
+          z-index: 1000;
+          text-align: center;
+          font-size: 26px;
+          font-weight: 100;
+          line-height: 34px; }
+        .slide .content-container .content .main-content .left #hex1-copy {
+          top: 326px;
+          left: 270px; }
+        .slide .content-container .content .main-content .left #hex2-copy {
+          top: 461px;
+          left: 570px; }
+        .slide .content-container .content .main-content .left #hex3-copy {
+          top: 622px;
+          left: 251px;
+          width: 300px; }
+          .slide .content-container .content .main-content .left #hex3-copy span.fact {
+            font-size: 78px;
+            line-height: 80px; }
+        .slide .content-container .content .main-content .left #page1-hex1 {
+          position: absolute;
+          top: 220px;
+          left: 200px; }
+        .slide .content-container .content .main-content .left #page1-hex2 {
+          position: absolute;
+          top: 393px;
+          left: 501px; }
+        .slide .content-container .content .main-content .left #page1-hex3 {
+          position: absolute;
+          top: 567px;
+          left: 200px; }
       .slide .content-container .content .main-content .right {
         width: 50%;
         height: 100%;
@@ -124,38 +151,3 @@ img {
 
 video::-webkit-media-controls {
   display: none !important; }
-
-.hex {
-  position: relative;
-  float: left;
-  height: 100px;
-  min-width: 100px;
-  padding: 12px;
-  margin: 4px;
-  font-weight: bold;
-  text-align: center;
-  background: linear-gradient(to right, #c72929, #f34336);
-  -webkit-clip-path: polygon(25px 0px, calc(100% - 25px) 0px, 100% 50%, calc(100% - 25px) 100%, 25px 100%, 0px 50%); }
-  .hex.gradient-bg {
-    color: white; }
-  .hex.gradient-border {
-    color: #c72929; }
-  .hex:before {
-    position: absolute;
-    content: '';
-    height: calc(100% - 14px);
-    width: calc(100% - 14px);
-    left: 7px;
-    top: 7px;
-    -webkit-clip-path: polygon(22px 0px, calc(100% - 22px) 0px, 100% 50%, calc(100% - 22px) 100%, 22px 100%, 0px 50%);
-    z-index: -1; }
-  .hex.gradient-bg:before {
-    background: linear-gradient(to right, #c72929, #f34336); }
-  .hex.gradient-border:before {
-    background: #f5f6f8; }
-
-span {
-  display: block;
-  margin-top: 50px;
-  padding: 8px;
-  transform: translateY(-50%); }
