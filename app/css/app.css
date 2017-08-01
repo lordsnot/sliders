@@ -1,11 +1,22 @@
 body, div, p, h1, h2, h3, button {
-  font-family: "museo-sans"; }
+  font-family: "museo-sans";
+  font-weight: 100; }
+
+div.table {
+  display: table; }
+
+div.table-row {
+  display: table-row; }
+
+div.table-cell {
+  display: table-cell; }
 
 h1 {
   font-size: 5em;
   color: #fff;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-weight: bold; }
 
 .section {
   overflow: hidden; }
@@ -80,7 +91,7 @@ img {
   height: 100%;
   padding: 50px 60px 100px 60px; }
   .slide .content-container .content {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     height: 100%;
     padding: 50px 85px 50px 85px; }
@@ -95,59 +106,168 @@ img {
       text-transform: uppercase; }
     .slide .content-container .content .main-content {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      color: white;
+      font-size: 20px; }
+      .slide .content-container .content .main-content .st-page2 video {
+        position: relative;
+        width: 1500px;
+        height: 844px;
+        top: 20px;
+        left: 20px; }
       .slide .content-container .content .main-content .left {
         width: 50%;
         height: 100%;
         float: left; }
-        .slide .content-container .content .main-content .left .hex-copy {
+        .slide .content-container .content .main-content .left .st-page1 .hex-copy {
           position: absolute;
           width: 250px;
           color: white;
           z-index: 1000;
           text-align: center;
-          font-size: 26px;
+          font-size: 28px;
           font-weight: 100;
-          line-height: 34px; }
-        .slide .content-container .content .main-content .left #hex1-copy {
-          top: 326px;
+          line-height: 38px; }
+        .slide .content-container .content .main-content .left .st-page1 #hex1-copy {
+          top: 294px;
           left: 270px; }
-        .slide .content-container .content .main-content .left #hex2-copy {
-          top: 461px;
-          left: 570px; }
-        .slide .content-container .content .main-content .left #hex3-copy {
-          top: 622px;
-          left: 251px;
-          width: 300px; }
-          .slide .content-container .content .main-content .left #hex3-copy span.fact {
-            font-size: 78px;
-            line-height: 80px; }
-        .slide .content-container .content .main-content .left #page1-hex1 {
+        .slide .content-container .content .main-content .left .st-page1 #hex2-copy {
+          top: 451px;
+          left: 568px; }
+        .slide .content-container .content .main-content .left .st-page1 #hex3-copy {
+          top: 644px;
+          left: 248px;
+          width: 300px;
+          font-size: 20px;
+          line-height: 30px; }
+          .slide .content-container .content .main-content .left .st-page1 #hex3-copy span.fact {
+            font-size: 84px;
+            line-height: 86px;
+            font-weight: 700; }
+        .slide .content-container .content .main-content .left .st-page1 #page1-hex1 {
           position: absolute;
           top: 220px;
           left: 200px; }
-        .slide .content-container .content .main-content .left #page1-hex2 {
+        .slide .content-container .content .main-content .left .st-page1 #page1-hex2 {
           position: absolute;
           top: 393px;
           left: 501px; }
-        .slide .content-container .content .main-content .left #page1-hex3 {
+        .slide .content-container .content .main-content .left .st-page1 #page1-hex3 {
           position: absolute;
           top: 567px;
           left: 200px; }
+        .slide .content-container .content .main-content .left .st-page3 {
+          padding: 100px 20px; }
+          .slide .content-container .content .main-content .left .st-page3 span {
+            color: red; }
+          .slide .content-container .content .main-content .left .st-page3 canvas {
+            margin-top: 50px; }
+          .slide .content-container .content .main-content .left .st-page3 div.title {
+            margin-bottom: 50px; }
+          .slide .content-container .content .main-content .left .st-page3 div.summary {
+            margin-top: 50px; }
+        .slide .content-container .content .main-content .left .st-page4 ul {
+          margin-bottom: 20px; }
+        .slide .content-container .content .main-content .left .st-page4 .image {
+          position: relative;
+          width: 100%;
+          /* for IE 6 */ }
+        .slide .content-container .content .main-content .left .st-page4 h2 span {
+          color: white;
+          font: bold 24px/45px Helvetica, Sans-Serif;
+          letter-spacing: -1px;
+          background: black;
+          /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
+          padding: 10px; }
       .slide .content-container .content .main-content .right {
         width: 50%;
         height: 100%;
-        background-color: rgba(255, 0, 255, 0.5);
         float: right; }
-      .slide .content-container .content .main-content .left .hexagon-container.container1 {
-        background-color: grey;
-        top: 225px;
-        position: absolute;
-        color: white; }
-      .slide .content-container .content .main-content .left .hexagon-container.container3 {
-        background-color: red;
-        top: 575px;
-        position: absolute; }
+        .slide .content-container .content .main-content .right .st-page1 svg {
+          position: absolute; }
+        .slide .content-container .content .main-content .right .st-page1 div {
+          position: absolute; }
+          .slide .content-container .content .main-content .right .st-page1 div.right-copy-1 {
+            top: 255px;
+            left: 1055px;
+            color: white;
+            font-size: 20px;
+            line-height: 40px; }
+          .slide .content-container .content .main-content .right .st-page1 div.right-copy-2 {
+            top: 550px;
+            left: 1055px;
+            color: white;
+            font-size: 20px;
+            line-height: 40px; }
+        .slide .content-container .content .main-content .right .st-page1 svg#hex-bullet-1 {
+          top: 255px;
+          left: 1000px; }
+        .slide .content-container .content .main-content .right .st-page1 svg#hex-bullet-2 {
+          top: 550px;
+          left: 1000px; }
+        .slide .content-container .content .main-content .right .st-page1 div.hex-bullet {
+          font-size: 20px;
+          color: white;
+          z-index: 1000; }
+        .slide .content-container .content .main-content .right .st-page1 div#hex-bullet-1 {
+          top: 260px;
+          left: 1016px; }
+        .slide .content-container .content .main-content .right .st-page1 div#hex-bullet-2 {
+          top: 555px;
+          left: 1015px; }
+        .slide .content-container .content .main-content .right .st-page1 div.callout {
+          left: 1052px;
+          top: 773px;
+          background-color: #007dc3;
+          border: 1px solid white;
+          height: 110px;
+          width: 660px;
+          padding: 20px;
+          color: white;
+          font-size: 18px;
+          font-weight: bold; }
+          .slide .content-container .content .main-content .right .st-page1 div.callout div.left {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            display: block;
+            float: left; }
+            .slide .content-container .content .main-content .right .st-page1 div.callout div.left span.price {
+              font-size: 42px;
+              font-weight: bold; }
+          .slide .content-container .content .main-content .right .st-page1 div.callout div.right {
+            position: relative;
+            vertical-align: bottom;
+            display: table-cell;
+            padding-top: 25px;
+            font-weight: 100;
+            float: right; }
+        .slide .content-container .content .main-content .right .st-page3 {
+          padding: 100px 20px; }
+          .slide .content-container .content .main-content .right .st-page3 span {
+            color: red; }
+          .slide .content-container .content .main-content .right .st-page3 canvas {
+            margin-top: 50px;
+            margin-left: 100px; }
+          .slide .content-container .content .main-content .right .st-page3 div.title {
+            margin-bottom: 50px; }
+          .slide .content-container .content .main-content .right .st-page3 div.summary {
+            margin-top: 50px; }
+        .slide .content-container .content .main-content .right .st-page4 ul {
+          margin-bottom: 20px; }
+        .slide .content-container .content .main-content .right .st-page4 .image {
+          position: relative;
+          width: 100%;
+          /* for IE 6 */ }
+        .slide .content-container .content .main-content .right .st-page4 h2 span {
+          color: white;
+          font: bold 24px/45px Helvetica, Sans-Serif;
+          letter-spacing: -1px;
+          background: black;
+          /* fallback color */
+          background: rgba(0, 0, 0, 0.7);
+          padding: 10px; }
 
 video::-webkit-media-controls {
   display: none !important; }
