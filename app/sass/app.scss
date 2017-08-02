@@ -1,21 +1,46 @@
 $egoBlue: #007dc3;
-@mixin st-page4(){
-  // img { display: block; position: relative; margin: 30px 0px;}
-  ul { margin-bottom: 20px;}
-  .image { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
-  }
 
-  h2 span { 
-     color: white; 
-     font: bold 24px/45px Helvetica, Sans-Serif; 
-     letter-spacing: -1px;  
-     background: rgb(0, 0, 0); /* fallback color */
-     background: rgba(0, 0, 0, 0.7);
-     padding: 10px; 
+
+@mixin st-page2(){
+  video {
+    position: relative;
+    width: 1500px;
+    height: 844px;
+    top: 20px;
+    left: 20px;
   }
 }
+
+@mixin st-page3() {
+  
+  padding: 100px 20px;
+  span { color: red; }
+  canvas { margin-top: 50px;}
+  div.title {margin-bottom: 50px;}
+  div.summary { margin-top: 50px;}
+
+}
+
+@mixin st-page4(){
+  img { 
+    width: 600px;
+    display: block;
+    position: relative;
+    margin: 30px;
+  }
+}
+
+@mixin st-page5(){
+  
+  div.sub-header  {
+
+    width: 100%; 
+    text-align: center;
+    margin-top: 130px;
+
+  }
+}
+
 
 body, div, p, h1, h2, h3, button {
   font-family: "museo-sans";
@@ -33,6 +58,7 @@ h1 {
   padding: 0;
   font-weight: bold;
 }
+h3 { margin-top: 30px;}
 
 .section {
   overflow: hidden;
@@ -135,23 +161,24 @@ img {
       text-transform: uppercase;
     }
     .main-content {
+
       width: 100%;
       height: 100%;
       color: white;
       font-size: 20px;
 
-      .st-page2 video {
-        position: relative;
-        width: 1500px;
-        height: 844px;
-        top: 20px;
-        left: 20px;
+      .st-page2 {
+        @include st-page2()
       }
+
       .left {
+        
         width: 50%;
         height: 100%;
         float: left;
+        
         .st-page1 {
+
           .hex-copy {
             position: absolute;
             width: 250px;
@@ -199,16 +226,19 @@ img {
           }
         }
         .st-page3 {
-          padding: 100px 20px;
-          span { color: red; }
-          canvas { margin-top: 50px;}
-          div.title {margin-bottom: 50px;}
-          div.summary { margin-top: 50px;}
+
+          @include st-page3()
+             
         }
 
         .st-page4 {
           @include st-page4()
+
         }
+        .st-page5 {
+          @include st-page5()
+        }
+
       }
       .right {
         width: 50%;
@@ -294,18 +324,17 @@ img {
             }
           }
         }
+        
         .st-page3 {
-        
-          padding: 100px 20px;
-          span { color: red; }
-          canvas { margin-top: 50px; margin-left:100px;}
-          div.title {margin-bottom: 50px;}
-          div.summary { margin-top: 50px;}
-        
+          @include st-page3()
         }
 
         .st-page4 {
           @include st-page4()
+        }
+
+        .st-page5 {
+          @include st-page5()
         }
       }
     }

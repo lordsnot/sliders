@@ -3,8 +3,8 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Background video - fullPage.js</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
+	<title>Ego Aged Care Detailer</title>
+	<meta name="author" content="Matt Ford - H&T" />
 	<meta name="description" content="fullPage full-screen backgrounds." />
 	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
 	<meta name="Resource-type" content="Document" />
@@ -12,6 +12,7 @@
 	<script src="https://use.typekit.net/hrp5gfb.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+	<script src="js/Chart.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!--  -->
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
@@ -28,13 +29,14 @@
 		</script>
 	<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
 	<script type="text/javascript" src="js/scrolloverflow.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/examples.js"></script>
 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<script type="text/javascript">
 
@@ -108,23 +110,60 @@
 			    			The dual burden of skin tears
 			    		</div>
 			    		<div class="main-content">
-
 			    			<div class="left">
-								<svg id="page1-hex1" version="1.1" xmlns="http://www.w3.org/2000/svg" width="390" height="338" viewbox="0 0 390 337.749907475931">	
-									<path fill="#007dc3" d="M0 168.8749537379655L97.5 0L292.5 0L390 168.8749537379655L292.5 337.749907475931L97.5 337.749907475931Z"></path>
-								</svg>
-								<div id="hex1-copy" class="hex-copy">A skin tear is a break in the skin caused by a minor trauma suck as a bump or knock<sup>1</sup></div>
+			    				<div class="st-page1">
+									<svg id="page1-hex1" version="1.1" xmlns="http://www.w3.org/2000/svg" width="390" height="338" viewbox="0 0 390 337.749907475931">	
+										<path fill="#007dc3" d="M0 168.8749537379655L97.5 0L292.5 0L390 168.8749537379655L292.5 337.749907475931L97.5 337.749907475931Z"></path>
+									</svg>
+									<div id="hex1-copy" class="hex-copy">A skin tear is a break in the skin caused by a minor trauma suck as a bump or knock<sup>1</sup></div>
 
-								<svg id="page1-hex2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="390" height="338" viewbox="0 0 390 337.749907475931">	<path fill="#007dc3" d="M0 168.8749537379655L97.5 0L292.5 0L390 168.8749537379655L292.5 337.749907475931L97.5 337.749907475931Z"></path>
-								</svg>
-								<div id="hex2-copy" class="hex-copy">Skin tears are common in the elderly - skin typically becomes thinner and drier as we age<sup>2</sup></div>
+									<svg id="page1-hex2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="390" height="338" viewbox="0 0 390 337.749907475931">	<path fill="#007dc3" d="M0 168.8749537379655L97.5 0L292.5 0L390 168.8749537379655L292.5 337.749907475931L97.5 337.749907475931Z"></path>
+									</svg>
+									<div id="hex2-copy" class="hex-copy">Skin tears are common in the elderly - skin typically becomes thinner and drier as we age<sup>2</sup></div>
 
-								<svg id="page1-hex3" version="1.1" xmlns="http://www.w3.org/2000/svg" width="390" height="338" viewbox="0 0 390 337.749907475931">	<path fill="#007dc3" d="M0 168.8749537379655L97.5 0L292.5 0L390 168.8749537379655L292.5 337.749907475931L97.5 337.749907475931Z"></path>
-								</svg>
-								<div id="hex3-copy" class="hex-copy">Up to <br/><span class="fact">41.5<sup>%</sup></span> prevalence rate in<br/>aged care&nbsp;populations<sup>2</sup></div>
-			    			</div>
+									<svg id="page1-hex3" version="1.1" xmlns="http://www.w3.org/2000/svg" width="390" height="338" viewbox="0 0 390 337.749907475931">	<path fill="#007dc3" d="M0 168.8749537379655L97.5 0L292.5 0L390 168.8749537379655L292.5 337.749907475931L97.5 337.749907475931Z"></path>
+									</svg>
+									<div id="hex3-copy" class="hex-copy">Up to <br/><span class="fact">41.5<sup>%</sup></span><br/> prevalence rate in<br/>aged care&nbsp;populations<sup>2</sup></div>
+				    			</div>
+				    		</div>
 
 			    			<div class="right">
+
+								<div class="st-page1">
+
+									<div id="hex-bullet-1" class="hex-bullet">1</div>
+									<svg id="hex-bullet-1" 	version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewbox="0 0 40 34.64101615137754"><path fill="#007dc3" d="M0 17.32050807568877L10 0L30 0L40 17.32050807568877L30 34.64101615137754L10 34.64101615137754Z"></path></svg>
+									<div class="right-copy-1">
+										<strong>The quality of life impact of skin tears</strong><br/>
+										Skin tears in aged care residents can lead to:
+										<ul>
+											<li>Distress for patients and families<sup>2</sup></li>
+											<li>Ulcers<sup>3</sup></li>
+											<li>Prolonged hospital stays<sup>2</sup></li>
+											<li>Infection</li>
+										</ul>
+									</div>
+
+									<div id="hex-bullet-2" class="hex-bullet">2</div>
+									<svg id="hex-bullet-2" version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewbox="0 0 40 34.64101615137754"><path fill="#007dc3" d="M0 17.32050807568877L10 0L30 0L40 17.32050807568877L30 34.64101615137754L10 34.64101615137754Z"></path></svg>
+									<div class="right-copy-2">
+										<strong>The economic impact of skin tears</strong><br/>
+										<ul>
+											<li>Treatment can be lengthy, requiring daily wound dressing changes,<br/>care and waste disposal<sup>4</sup></li>
+											<li>An Australian study analysing the costs of treating wounds estimated<br/>the mean cost of treating skin tears to be <strong>$488.95</strong><sup>4</sup></li>
+										</ul>
+									</div>
+
+									<div class="callout">	
+										<div class="left">
+											<span>Annual chronic wound care costs<sup>1</sup></span><br/>
+											<span class="price">$2.85 billion</span>
+										</div>
+										<div class="right">
+											Direct costs to hospitals and aged care facilities in Australia (2010/11)
+										</div>
+									</div>
+								</div>
 
 			    			</div>
 			    		</div>
@@ -132,10 +171,230 @@
 		    	</div>
 		   	</div>
 		<!-- END SKIN TEAR SLIDE 1 -->
+		<!-- SKIN TEAR SLIDE 2 -->
+		    <div class="slide" id="st-slide2">
+		    	<div class="content-container">
+		    		<div class="content">
+			    		<div class="header">
+			    			See how QV can significantly reduce aged care costs
+			    		</div>
+			    		<div class="main-content">
 
-		    <div class="slide" id="st-slide2"><h1>Skin Tear 2</h1></div>
-		    <div class="slide" id="st-slide3"><h1>Skin Tear 3</h1></div>
-		    <div class="slide" id="st-slide4"><h1>Skin Tear 4</h1></div>
+			    			<div class="st-page2">
+				    			<video width="1500" height="844" controls autoplay>
+								  <source src="video/EGO0779_Music_v3.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+		<!-- END SKIN TEAR SLIDE 2 -->
+		<!-- SKIN TEAR SLIDE 3 -->		
+		    <div class="slide" id="st-slide3">
+		    	<div class="content-container">
+		    		<div class="content">
+			    		<div class="header">
+			    			Skin tear prevention studies show positive results 
+			    		</div>
+			    		<div class="main-content">
+			    			<div class="left">
+			    				<div class="st-page3">
+			    					<div class="title"><strong>Trial 1 – Carville et al, Western Australia<sup>1</sup></strong></div>
+			    					<div class="list">
+			    						<ul>
+			    							<li>984 aged care residents from 14 facilities, divided into intervention (n=420) and control (n=564) groups</li>
+											<li>Residents in intervention group received twice-daily application of moisturiser on their arms and legs</li>
+											<li>Residents in control group received ad hoc or no standardised skin-moisturising regimen</li>
+										</ul>
+									</div>
+				    				<canvas id="stSlide3Chart1" width="700" height="150"></canvas>
+				    				<div class="summary">
+				    					<strong>Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup></strong>
+			    						<div class="table">
+			    							<div class="table-row">
+			    								<div class="table-cell">Control Group</div><div class="table-cell">10.57</div>
+			    							</div>
+			    							<div class="table-row">
+			    								<div class="table-cell">Intervention (Moisturiser) Group </div><div class="table-cell"> 5.76<sup>*</sup></div><div class="table-cell">45% Reduction</div>
+			    							</div>
+			    						</div>
+			    						
+				    				</div>
+			    				</div>
+			    			</div>
+							<div class="right">
+			    				<div class="st-page3">
+				    				<div class="title"><strong>Trial 2 – Finch, Queensland<sup>2</sup></strong></div>
+			    					<div class="list">
+			    						<ul>
+			    							<li>430 patients aged over 65 years who were hospitalised </li>
+											<li>All patients received twice-daily application of moisturiser (QV Skin Lotion) on their arms and legs </li>
+											<li>Incidence of skin tears was compared to data from an incidence survey from the hospital</li>
+										</ul>
+									</div>
+				    				<canvas id="stSlide3Chart2" width="700" height="150"></canvas>
+				    				<div class="summary">
+				    					<strong>Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup></strong>
+			    						<div class="table">
+			    							<div class="table-row">
+			    								<div class="table-cell"><span class="big-number">45%</span><br/>Reduction in skin tear patients</div>
+			    							</div>
+			    							<div class="table-row">
+			    								<div class="table-cell"><span class="big-number">51%</span><br/> Reduction in skin tears</div>
+			    							</div>
+			    						</div>
+				    				</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
+		    </div>
+		<!-- END SKIN TEAR SLIDE 2 -->
+		<!-- SKIN TEAR SLIDE 3 -->		
+		    <div class="slide" id="st-slide4">
+		    	<div class="content-container">
+		    		<div class="content">
+			    		<div class="header">
+			    			Skin tear prevention studies show positive results 
+			    		</div>
+			    		<div class="main-content">
+			    			<div class="left">
+			    				<div class="st-page4">
+			    					<h3>1. Cleanse with QV Gentle Wash</h3>
+		    						<img src="img/gentle_wash.jpg" alt="Gentle Wash"/>
+
+			    					<div>
+				    					<ul>
+				    						<li>15% glycerin</li>
+											<li>pH balanced</li>
+											<li>Free from fragrance, colour, lanolin and propylene glycol</li>
+											<li>Designed to cleanse the skin without drying</li>
+										</ul>
+										<strong>Benefits for patients:</strong>
+										<ul>
+				    						<li>Non-drying</li>
+											<li>Low irritation potential</li>
+											<li>Suitable for patients with eczema, dermatitis, psoriasis, dry and very dry skin</li>
+											<li>Non-soap surfactants foam and clean effectively without drying</li>
+											<li>Added humectant (glycerin) helps hydrate the skin</li>
+										</ul>
+									</div>
+
+			    				</div>
+			    			</div>
+			    			<div class="right">
+			    				<div class="st-page4">
+			    					<h3>2. Moisturise with QV Skin Lotion twice daily</h3>
+		    						<img style="display: block;" src="img/skin_lotion.jpg" alt="Skin Lotion"/>
+			    					<div>
+				    					<ul>
+				    						<li>pH balanced</li>
+											<li>Low-irritant formulation</li></li>
+											<li>Light, non-greasy lotion</li>
+											<li>Free from fragrance, colour, lanolin and propylene glycol</li>
+										</ul>
+										<strong>Benefits for patients:</strong>
+										<ul>
+				    						<li>Helps seal in natural moisture by acting as a protective barrier</li>
+											<li>Triple moisturising action</li>
+											<li>Suitable for patients with eczema, dermatitis, psoriasis and dry skin</li>
+											<li>Helps prevent and relieve dry skincare</li>
+										</ul>
+									</div>
+			    				</div>
+			    			</div>
+
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+
+		<!-- END SKIN TEAR SLIDE 4 -->
+		<!-- SKIN TEAR SLIDE 5 -->		
+		    <div class="slide" id="st-slide5">
+		    	<div class="content-container">
+		    		<div class="content">
+
+			    		<div class="header">
+			    			Case Studies
+			    		</div>
+
+			    		<div class="main-content">
+
+			    			<div class="left">
+			    				<div class="st-page5">
+			    					<div class="sub-header">
+			    						<h3>Bucklands Lodge, North Plympton, SA</h3>
+			    					</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="right">
+			    				<div class="st-page5">
+			    					<div class="sub-header">
+			    						<h3>Willowbrooke Aged Care Facility, Ferntree Gully, Victoria</h3>
+			    					</div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+			    					<img src="img/facility.png" id="caseStudy1Link">
+
+			    					<div id="caseStudy1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">>
+										<div class="modal-dialog" role="document">
+										    <div class="modal-content">
+
+										      	<div class="modal-header">
+										        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></	button>
+										        	<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+										      	</div>
+
+										      	<div class="modal-body">
+										        	HER"ES THE MOADLA BOTY
+										      	</div>
+
+											    <div class="modal-footer">
+											    	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											        <button type="button" class="btn btn-primary">Save changes</button>
+											    </div>
+
+										  	</div>
+										</div>
+			    					</div>
+
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			 	</div>
+			</div>
+
+
+		    
 		</div>
 		<div class="section" id="contact-dermatitis">
 		    <div class="slide" id="cd-slide1"><h1>Contact Dermatitis 1</h1></div>
@@ -144,6 +403,117 @@
 		    <div class="slide" id="cd-slide4"><h1>Contact Dermatitis 4</h1></div>
 		</div>
 	</div>
+<script>
+	var ctx = $("#stSlide3Chart1");
+	var myChart = new Chart(ctx, {
+	    type: 'horizontalBar',
+	    data: {
+	        labels: ["Control Group", "Intervention (Moisturiser) Group"],
+	        datasets: [{
+	            label: 'Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup>',
+	            data: [10.57, 5.76],
+	            backgroundColor: [
+	                'rgba(195, 70, 0, 0.4)',
+	                'rgba(0, 125, 195, 0.4)',
+	            ],
+	            borderColor: [
+	                'rgba(195, 70, 0 , 1)',
+	                'rgba(0, 125, 195, 1)',
+	            ],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	    	responsive: false,
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                	fontColor: "white",
+	                    fontSize: 14,
+	                    beginAtZero:true,
+	                    // fontFamily: "museo-sans"
+	                   
+	                }
+	            }],
+	            xAxes: [{
+	            	gridLines: { 
+	            		color: "#aaa",
+	            		 drawBorder: true
+	            	},
+	                ticks: {
+	                    fontColor: "white",
+	                    fontSize: 14,
+	                    stepSize: 1,
+	                    beginAtZero: true,
+	                    fontFamily: "'museo-sans'"
+	                }
+	            }]
+	        },
+	        scaleLabel: { fontColor: "white" },
+	        legend: { display: false },
+           	labels: {fontColor: "white"	},
+           	events: [],
 
+    	}
+	});
+
+	var ctx = $("#stSlide3Chart2");
+	var myChart2 = new Chart(ctx, {
+	    type: 'line',
+	    data: {
+	        labels: ["Control Group", "Intervention (Moisturiser) Group"],
+	        datasets: [{
+	            label: 'Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup>',
+	            data: [10.57, 5.76],
+	            backgroundColor: [
+	                // 'rgba(195, 70, 0, 0.4)',
+	                'rgba(0, 125, 195, 0.4)',
+	            ],
+	            borderColor: [
+	                // 'rgba(195, 70, 0 , 1)',
+	                'rgba(0, 125, 195, 1)',
+	            ],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	    	responsive: false,
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                	fontColor: "white",
+	                    fontSize: 14,
+	                    beginAtZero:true,
+	                    // fontFamily: "museo-sans"
+	                   
+	                }
+	            }],
+	            xAxes: [{
+	            	gridLines: { 
+	            		color: "#aaa",
+	            		 drawBorder: true
+	            	},
+	                ticks: {
+	                    fontColor: "white",
+	                    fontSize: 14,
+	                    stepSize: 1,
+	                    beginAtZero: true,
+	                    fontFamily: "'museo-sans'"
+	                }
+	            }]
+	        },
+	        scaleLabel: { fontColor: "white" },
+	        legend: { display: false },
+           	labels: {fontColor: "white"	},
+           	events: [],
+
+    	}
+	});
+
+	$('#caseStudy1Link').on('click', function(){
+		$('#caseStudy1').modal('show'); 
+	});
+
+</script>
 </body>
 </html>

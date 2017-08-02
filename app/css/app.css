@@ -18,6 +18,9 @@ h1 {
   padding: 0;
   font-weight: bold; }
 
+h3 {
+  margin-top: 30px; }
+
 .section {
   overflow: hidden; }
 
@@ -166,20 +169,15 @@ img {
             margin-bottom: 50px; }
           .slide .content-container .content .main-content .left .st-page3 div.summary {
             margin-top: 50px; }
-        .slide .content-container .content .main-content .left .st-page4 ul {
-          margin-bottom: 20px; }
-        .slide .content-container .content .main-content .left .st-page4 .image {
+        .slide .content-container .content .main-content .left .st-page4 img {
+          width: 600px;
+          display: block;
           position: relative;
+          margin: 30px; }
+        .slide .content-container .content .main-content .left .st-page5 div.sub-header {
           width: 100%;
-          /* for IE 6 */ }
-        .slide .content-container .content .main-content .left .st-page4 h2 span {
-          color: white;
-          font: bold 24px/45px Helvetica, Sans-Serif;
-          letter-spacing: -1px;
-          background: black;
-          /* fallback color */
-          background: rgba(0, 0, 0, 0.7);
-          padding: 10px; }
+          text-align: center;
+          margin-top: 130px; }
       .slide .content-container .content .main-content .right {
         width: 50%;
         height: 100%;
@@ -248,26 +246,20 @@ img {
           .slide .content-container .content .main-content .right .st-page3 span {
             color: red; }
           .slide .content-container .content .main-content .right .st-page3 canvas {
-            margin-top: 50px;
-            margin-left: 100px; }
+            margin-top: 50px; }
           .slide .content-container .content .main-content .right .st-page3 div.title {
             margin-bottom: 50px; }
           .slide .content-container .content .main-content .right .st-page3 div.summary {
             margin-top: 50px; }
-        .slide .content-container .content .main-content .right .st-page4 ul {
-          margin-bottom: 20px; }
-        .slide .content-container .content .main-content .right .st-page4 .image {
+        .slide .content-container .content .main-content .right .st-page4 img {
+          width: 600px;
+          display: block;
           position: relative;
+          margin: 30px; }
+        .slide .content-container .content .main-content .right .st-page5 div.sub-header {
           width: 100%;
-          /* for IE 6 */ }
-        .slide .content-container .content .main-content .right .st-page4 h2 span {
-          color: white;
-          font: bold 24px/45px Helvetica, Sans-Serif;
-          letter-spacing: -1px;
-          background: black;
-          /* fallback color */
-          background: rgba(0, 0, 0, 0.7);
-          padding: 10px; }
+          text-align: center;
+          margin-top: 130px; }
 
 video::-webkit-media-controls {
   display: none !important; }
