@@ -14,12 +14,11 @@
 
 	<script src="js/Chart.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<!--  -->
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<!-- <link rel="stylesheet" type="text/css" href="examples.css" /> -->
-	<link rel="stylesheet" type="text/css" href="css/app.css" />
-	<!-- <link rel="stylesheet" type="text/css" href="hexagon.css" /> -->
 
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/normalise.css" />
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -31,7 +30,9 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+ 
+
 	<script type="text/javascript" src="js/scrolloverflow.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/examples.js"></script>
@@ -106,10 +107,13 @@
 		    <div class="slide" id="st-slide1">
 		    	<div class="content-container">
 		    		<div class="content">
+
 			    		<div class="header">
 			    			The dual burden of skin tears
 			    		</div>
 			    		<div class="main-content">
+			    			<div class="menu-cta st"><img src="img/menu.png"></div>
+
 			    			<div class="left">
 			    				<div class="st-page1">
 									<svg id="page1-hex1" version="1.1" xmlns="http://www.w3.org/2000/svg" width="390" height="338" viewbox="0 0 390 337.749907475931">	
@@ -166,6 +170,17 @@
 								</div>
 
 			    			</div>
+				    		<div class="references-cta">wtf cunt</div>
+				    		<div class="references" data-status="closed">
+				    			<strong>References:</strong>
+								<ol>
+									<li><span>Wound Management Innovation Co-operative Research Centre. Accessed July 2017 from: 
+									www.woundcrc.com/major-challenge.html</span></li>
+									<li><span>LeBlanc K, Baranoski S for the Skin Tear Consensus Panel. Skin tears: state of the science: consensus statements for the prevention, prediction, assessment, and treatment of skin tears. Adv Skin Wound Care 2011; 24(9): 2–15.</span></li>
+									<li><span>Wound CRC delivers a 50% reduction in skin tears. Accessed July 2017 from: http://us6.campaign-archive2.com/?u=bcb25504cb5390d57b14f0ee0&amp;id=16f88e701b&amp;e=a22c1351a8</span></li>
+									<li><span>Vu T, Harris A, Duncan G, Sussman G. Cost effectiveness of multidisciplinary wound care in nursing homes: a pseudo-randomized pragmatic cluster trial. Fam Pract 2007; 24: 372–379.</span></li>
+								</ol>
+				    		</div>
 			    		</div>
 			    	</div>
 		    	</div>
@@ -179,7 +194,7 @@
 			    			See how QV can significantly reduce aged care costs
 			    		</div>
 			    		<div class="main-content">
-
+			    			<div class="menu-cta st"><img src="img/menu.png"></div>
 			    			<div class="st-page2">
 				    			<video width="1500" height="844" controls autoplay>
 								  <source src="video/EGO0779_Music_v3.mp4" type="video/mp4">
@@ -200,6 +215,7 @@
 			    			Skin tear prevention studies show positive results 
 			    		</div>
 			    		<div class="main-content">
+			    			<div class="menu-cta st"><img src="img/menu.png"></div>
 			    			<div class="left">
 			    				<div class="st-page3">
 			    					<div class="title"><strong>Trial 1 – Carville et al, Western Australia<sup>1</sup></strong></div>
@@ -211,6 +227,7 @@
 										</ul>
 									</div>
 				    				<canvas id="stSlide3Chart1" width="700" height="150"></canvas>
+				    				<!-- <img src="img/graph.png" alt="chart" style="width: 700px;"/> -->
 				    				<div class="summary">
 				    					<strong>Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup></strong>
 			    						<div class="table">
@@ -240,21 +257,27 @@
 				    					<strong>Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup></strong>
 			    						<div class="table">
 			    							<div class="table-row">
-			    								<div class="table-cell"><span class="big-number">45%</span><br/>Reduction in skin tear patients</div>
-			    							</div>
-			    							<div class="table-row">
-			    								<div class="table-cell"><span class="big-number">51%</span><br/> Reduction in skin tears</div>
+			    								<div class="table-cell"><span class="big-number">45%</span><br/>Reduction in skin<br/> tear patients</div>
+			    								<div class="table-cell"><span class="big-number">51%</span><br/> Reduction in<br/>skin tears</div>
 			    							</div>
 			    						</div>
 				    				</div>
 			    				</div>
 			    			</div>
+				    		<div class="references-cta">wtf cunt</div>
+				    		<div class="references" data-status="closed">
+				    			<strong>References:</strong>
+								<ol>
+									<li><span>Carville K, Leslie G, Osseiran-Moisson R, Newall N, Lewin G. The effectiveness of a twice-daily skin-moisturising regimen for reducing the incidence of skin tears. Int Wound J 2014; 11(4): 446–453.</span></li>
+									<li><span>Finch K. Skin tear prevention in patients over 65 years of age in a hospital setting. Podium Presentation. 10th Australian Wound Management Association Conference, May 7–10 2014, Brisbane, Australia.</span></li>
+								</ol>
+				    		</div>
 			    		</div>
 			    	</div>
 			    </div>
 		    </div>
-		<!-- END SKIN TEAR SLIDE 2 -->
-		<!-- SKIN TEAR SLIDE 3 -->		
+		<!-- END SKIN TEAR SLIDE 3 -->
+		<!-- SKIN TEAR SLIDE 4 -->		
 		    <div class="slide" id="st-slide4">
 		    	<div class="content-container">
 		    		<div class="content">
@@ -262,6 +285,7 @@
 			    			Skin tear prevention studies show positive results 
 			    		</div>
 			    		<div class="main-content">
+			    			<div class="menu-cta st"><img src="img/menu.png"></div>
 			    			<div class="left">
 			    				<div class="st-page4">
 			    					<h3>1. Cleanse with QV Gentle Wash</h3>
@@ -307,7 +331,14 @@
 									</div>
 			    				</div>
 			    			</div>
-
+			    			<div class="references-cta">wtf cunt</div>
+				    		<div class="references" data-status="closed">
+				    			<strong>References:</strong>
+								<ol>
+									<li><span>Carville K, Leslie G, Osseiran-Moisson R, Newall N, Lewin G. The effectiveness of a twice-daily skin-moisturising regimen for reducing the incidence of skin tears. Int Wound J 2014; 11(4): 446–453.</span></li>
+									<li><span>Finch K. Skin tear prevention in patients over 65 years of age in a hospital setting. Podium Presentation. 10th Australian Wound Management Association Conference, May 7–10 2014, Brisbane, Australia.</span></li>
+								</ol>
+				    		</div>
 			    		</div>
 			    	</div>
 			    </div>
@@ -324,7 +355,7 @@
 			    		</div>
 
 			    		<div class="main-content">
-
+			    			<div class="menu-cta st"><img src="img/menu.png"></div>
 			    			<div class="left">
 			    				<div class="st-page5">
 			    					<div class="sub-header">
@@ -338,29 +369,30 @@
 			    					<div class="sub-header">
 			    						<h3>Willowbrooke Aged Care Facility, Ferntree Gully, Victoria</h3>
 			    					</div>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+									<!-- Button trigger modal -->
+									<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+									  Launch demo modal
+									</button>
+
+									<!-- Modal -->
+									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+									  <div class="modal-dialog" role="document">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+									      </div>g
+									      <div class="modal-body">
+									        ...
+									      </div>
+									      <div class="modal-footer">
+									        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									        <button type="button" class="btn btn-primary">Save changes</button>
+									      </div>
+									    </div>
+									  </div>
+									</div>
 
 			    					<img src="img/facility.png" id="caseStudy1Link">
 
@@ -392,18 +424,363 @@
 			    	</div>
 			 	</div>
 			</div>
+		<!-- END SKIN TEAR SLIDE 5 -->
+		<!-- SKIN TEAR SLIDE 6 -->		
+		    <div class="slide" id="st-slide6">
+		    	<div class="content-container">
+		    		<div class="content">
+
+			    		<div class="header">
+			    			The benefits of QV in skin tear prevention
+			    		</div>
+
+			    		<div class="main-content">
+			    			<div class="menu-cta st"><img src="img/menu.png"></div>
+			    			<div class="left">
+			    				<div class="st-page6">
+			    					<ul>
+			    						<li>Skin tears affect both the quality of life of residents and the operating costs of aged care facilities<sup>1-4</sup></li>
+										<li>Prevention studies prove that twice-daily moisturising results in up to a 51% reduction in skin tears<sup>5,6</sup></li>
+										<li>QV Gentle Wash and Skin Lotion help preserve the integrity of skin in the elderly<sup>2,7</sup></li>
+										<li>Cost–benefit analysis shows that twice-daily moisturising with QV Skin Lotion results in significant savings<sup>4,6</sup></li>
+										<li>Case studies demonstrate that the results from trials are replicated in ‘real-world’ settings</li>
+									</ul>
+			    				</div>
+			    			</div>
+
+			    			<div class="right">
+			    				<div class="st-page6">
+			    					<img src="img/pack_shot.jpg" alt="pack shot"/>
+			    				</div>
+			    			</div>
+			    		</div>
+
+			    	</div>
+			    </div>
+			 </div>
 
 
-		    
+
+		   
 		</div>
+
+
 		<div class="section" id="contact-dermatitis">
-		    <div class="slide" id="cd-slide1"><h1>Contact Dermatitis 1</h1></div>
-		    <div class="slide" id="cd-slide2"><h1>Contact Dermatitis 2</h1></div>
-		    <div class="slide" id="cd-slide3"><h1>Contact Dermatitis 3</h1></div>
+			<!-- CONTACT DERMATITIS SLIDE 1 -->		
+		 	<div class="slide" id="cd-slide1">
+			    <div class="content-container">
+			    		<div class="content">
+
+				    		<div class="header">
+				    			The benefits of QV in skin tear prevention
+				    		</div>
+
+				    		<div class="main-content">
+				    		<div class="menu-cta cd"><img src="img/menu.png"></div>
+				    			<div class="left">
+				    				<div class="cd-page1">
+						    			
+						    			<ul>
+						    				<li>Healthcare workers are at high risk of developing occupational skin disease (OSD)<sup>1</sup></li>
+											<li>Occupational contact dermatitis (OCD) accounts for 90% of all OSD<sup>2</sup></li>
+						    			</ul>
+
+						    			<div class="nurse-figure">
+						    				<span class="big-number">17-50%</span><br/> of nurses are affected by OCD1
+						    			</div>
+
+										<ul>
+						    				<li>Of healthcare workers with occupational contact dermatitis, <strong>80%</strong> had irritant contact dermatitis (ICD) and <strong>50%</strong> had allergic contact dermatitis (ACD)<sup>1</sup></li>
+						    				<li>Occupational contact dermatitis is caused by daily exposure to irritants and hand hygiene requirements (‘wet’ environments)<sup>1</sup></li>
+						    			</ul>
+
+						    		</div>
+				    			</div>
+
+				    			<div class="right">
+				    				<div class="cd-page1">
+
+				    					<div class="top-container">
+					    					<div class="top-left">
+					    						<h3>Causes of irritant contact dermatitis<sup>1</sup></h3>
+					    						<canvas id="cdSlide1Chart1" width="280" height="230"></canvas>	
+					    					</div>
+					    					<div class="top-right">
+					    						<h3>Causes of allergic contact dermatitis (ACD)<sup>1</sup></h3>
+					    						<ul>
+								    				<li>Rubber glove chemicals – thiuram mix and tetraethylthiuram disulfide</li>
+								    				<li>Preservatives – formaldehyde, formaldehyde releasers and isothiazolinones</li>
+								    				<li>Excipients in hand cleansers – hard-to-avoid, weak allergens </li>
+								    				<li>Antiseptics</li>
+								    			</ul>
+					    					</div>
+					    				</div>
+										
+				    					<div class="box">ACD occurs more frequently with commercial hand cleansers than alcohol-based hand rubs.</div>
+				    					
+				    					<h3>Personal and economic consequences</h3>
+				    					<div class="bottom-container">
+				    						<div class="bottom-left">
+												<h4>For healthcare workers:</h4>
+												<ul>
+													<li>Impaired QoL <sup>1,3,4</sup></li>
+													<li>Inability to work <sup>1,3,4</sup></li>
+												</ul>
+				    						</div>
+				    						<div class="bottom-right">
+				    							<h4>For medical facilities:<sup>1</sup></h4>
+												<ul>
+													<li>Costs of medical care and sick leave</li>
+													<li>Lost productivity</li>
+													<li>Workers’ compensation claims</li>
+												</ul>
+				    						</div>
+				    					</div>
+
+
+				    				</div>
+				    			</div>
+
+				    		</div>
+
+				    	</div>
+				    </div>
+				</div>
+			<!-- END CONTACT DERMATITIS SLIDE 1 -->		
+		    <!-- CONTACT DERMATITIS SLIDE 2 -->		
+		 	<div class="slide" id="cd-slide2">
+			    <div class="content-container">
+		    		<div class="content">
+
+			    		<div class="header">
+			    			Guidelines to prevent and manage contact dermatitis<sup>1,2</sup>
+			    		</div>
+
+			    		<div class="main-content">
+				    		<div class="menu-cta cd"><img src="img/menu.png"></div>
+
+			    			<div class="left">
+			    				<div class="cd-page2">
+			    				<h3>1. Prevention<sup>1</sup></h3>
+					    			<img src="img/sanitise-hand-with-aqium.jpg">
+					    			<ul>
+					    				<li>Incorporate skin care advice (particularly moisturisers) into hand hygiene education</li>
+					    				<li>Encourage the use of alcohol-based hand rubs rather than ‘wet’ cleansers where appropriate</li>
+					    				<li>Substitute skin cleansers containing weak allergens with allergen-free cleansers</li>
+					    				<li>Label potential irritants or allergens in products being used</li>
+					    				<li>Use accelerator-free gloves for healthcare workers prone to OCD</li>
+					    			</ul>
+					    		</div>
+			    			</div>
+
+			    			<div class="right">
+			    				<div class="cd-page2">
+			    					<h3>2. Management<sup>1</sup></h3>
+			    					<img src="img/sanitise-hand-with-aqium.jpg">
+			    					<ul>
+				    					<li>Skin care education and advice should be provided to all healthcare workers</li>
+				    					<li>Anyone with signs of OCD should seek early treatment</li>
+				    					<li>Alcohol-based hand rubs should be used instead of soap or antiseptic agents (unless the hands are visibly dirty / contaminated)</li>
+				    					<li>Good hand washing and drying techniques should be followed</li>
+				    					<li>Conditioning creams should be used at work</li>
+				    					<li>Because skin affected by dermatitis may be colonised by bacteria, consider minimising contact with patients at high risk of hospital-acquired infection</li>
+			    					</ul>
+
+			    				</div>
+			    			</div>
+
+			    		</div>
+
+			    	</div>
+			    </div>
+			</div>
+		    <!-- END CONTACT DERMATITIS SLIDE 2 -->		
+		    <!-- CONTACT DERMATITIS SLIDE 3 -->		
+		 	<div class="slide" id="cd-slide3">
+			    <div class="content-container">
+		    		<div class="content">
+
+			    		<div class="header">
+			    			Guidelines to prevent and manage contact dermatitis<sup>1,2</sup>
+			    		</div>
+
+			    		<div class="main-content">
+				    		<div class="menu-cta cd"><img src="img/menu.png"></div>
+
+			    			<div class="left">
+			    				<div class="cd-page3">
+
+				    				<div class="product-container">
+				    					<h3>Aqium Gel</h3>
+						    			<img src="img/small_packs/aqium.jpg">
+						    			<div class="list-container">
+							    			<strong>Antibacterial sanitiser to promote good hand hygiene</strong>
+							    			<ul>
+							    				<li>Highly effective alcohol-based hand sanitiser</li>
+												<li>Contains 70% ethanol w/w (absolute)</li>
+												<li>Broad spectrum antibacterial efficacy </li>
+												<li>Contains 2 moisturisers – glycerin and dexpanthenol </li>
+												<li>Air dries quickly</li>
+							    			</ul>
+							    		</div>
+							    	</div>
+
+							    	<div class="product-container">
+				    					<h3>Silic 15</h3>
+						    			<img src="img/small_packs/aqium.jpg">
+						    			<div class="list-container">
+							    			<strong>Silicone-based barrier cream designed to<br/> shield your skin from irritants / allergens.</strong>
+							    			<ul>
+							    				<li>Breathable, invisible protective layer inhibits substances penetrating into damaged or dry skin </li>
+												<li>Non-sticky, non-greasy</li>
+												<li>pH balanced, low irritant formulation</li>
+												<li>Moisturising base helps to rehydrate skin and prevent moisture loss</li>
+												<li>Helps promote healing in ‘traumatised’ skin</li>
+							    			</ul>
+							    		</div>
+							    	</div>
+					    		</div>
+
+			    			</div>
+
+			    			<div class="right">
+			    				<div class="cd-page3">
+			    					<h3>2. Management<sup>1</sup></h3>
+			    					<img src="img/sanitise-hand-with-aqium.jpg">
+			    					<ul>
+				    					<li>Skin care education and advice should be provided to all healthcare workers</li>
+				    					<li>Anyone with signs of OCD should seek early treatment</li>
+				    					<li>Alcohol-based hand rubs should be used instead of soap or antiseptic agents (unless the hands are visibly dirty / contaminated)</li>
+				    					<li>Good hand washing and drying techniques should be followed</li>
+				    					<li>Conditioning creams should be used at work</li>
+				    					<li>Because skin affected by dermatitis may be colonised by bacteria, consider minimising contact with patients at high risk of hospital-acquired infection</li>
+			    					</ul>
+
+			    				</div>
+			    			</div>
+
+			    		</div>
+
+			    	</div>
+			    </div>
+			</div>
 		    <div class="slide" id="cd-slide4"><h1>Contact Dermatitis 4</h1></div>
 		</div>
 	</div>
+	<!-- MENUS -->
+
+	<div id="st-menu" class="menu" data-state="closed">
+		<img src="img/ego-logo.png" alt="logo"/>
+		<ul>
+			<li class='nav-menu-item' data-section="page2" data-page="0">Burden</li>
+			<li class='nav-menu-item' data-section="page2" data-page="1">Cost Benefits</li>
+			<li class='nav-menu-item' data-section="page2" data-page="2">Studies</li>
+			<li class='nav-menu-item' data-section="page2" data-page="3">QV Benefits</li>
+			<li class='nav-menu-item' data-section="page2" data-page="4">Case Studies</li>
+			<li class='nav-menu-item' data-section="page2" data-page="5">Summary</li>
+		</ul>
+	</div>
+
+	<div id="cd-menu" class="menu" data-state="closed">
+		<img src="img/ego-logo.png" alt="logo"/>
+		<ul>
+			<li class='nav-menu-item' data-section="page3" data-page="0">Burden</li>
+			<li class='nav-menu-item' data-section="page3" data-page="1">Guidelines</li>
+			<li class='nav-menu-item' data-section="page3" data-page="2">Ego Solutions</li>
+			<li class='nav-menu-item' data-section="page3" data-page="3">Benefits</li>
+			<li class='nav-menu-item' data-section="page3" data-page="4">Summary</li>
+		</ul>
+	</div>
+
 <script>
+
+$('.references-cta').on('click', function() { 
+
+	console.log("Clicked references");
+
+	// console.log($('.references-cta').next().text());
+
+	if($('.references-cta').next().data('status') == 'closed') {
+		$('.references-cta').next().data('status', 'opened');
+		$('.references-cta').next().animate({
+			opacity: 1
+		}, 350, function(){
+			console.log("References opened");
+		});
+	
+	} else {
+		$('.references-cta').next().data('status', 'closed');
+		$('.references-cta').next().animate({
+			opacity: 0,
+			
+		}, 350, function(){
+			console.log("References closed");
+		});
+	}
+});
+
+$('.menu-cta.cd').on('click', function(){
+
+	console.log($('#cd-menu').data('state'));
+	if($('#cd-menu').data('state') == 'closed') {
+		$('#cd-menu').data('state', 'opened');
+		$('#cd-menu').prependTo($(this));
+		$('#cd-menu').animate({
+		    opacity: 1,
+		    left: "-=135",
+		    top: "-=198",
+		    height: "toggle"
+		}, 350, function() {
+	    	console.log("Animation complete");
+	  	});
+	} else {
+		$('#cd-menu').data('state', 'closed');
+		$('#cd-menu').appendTo($(this));
+		$('#cd-menu').animate({
+		    opacity: 0,
+		    left: "+=135",
+		    top: "+=198",
+		    height: "toggle"
+		}, 500, function() {
+	    	console.log("Animation complete");
+	  	});
+	}
+});
+
+$('.menu-cta.st').on('click', function(){
+
+	console.log($('#st-menu').data('state'));
+	if($('#st-menu').data('state') == 'closed') {
+		$('#st-menu').data('state', 'opened');
+		$('#st-menu').prependTo($(this));
+		$('#st-menu').animate({
+		    opacity: 1,
+		    left: "-=135",
+		    top: "-=239",
+		    height: "toggle"
+		}, 350, "easeInOutQuint", function() {
+	    	console.log("Animation complete");
+	  	});
+	} else {
+		$('#st-menu').data('state', 'closed');
+		$('#st-menu').appendTo($(this));
+		$('#st-menu').animate({
+		    opacity: 0,
+		    left: "+=135",
+		    top: "+=239",
+		    height: "toggle"
+		}, 350, "easeInOutQuint", function() {
+	    	console.log("Animation complete");
+	  	});
+	}
+});
+
+$('.nav-menu-item').on('click', function(){
+
+	$.fn.fullpage.moveTo($(this).data('section'), $(this).data('page'));
+
+});
+
 	var ctx = $("#stSlide3Chart1");
 	var myChart = new Chart(ctx, {
 	    type: 'horizontalBar',
@@ -510,9 +887,64 @@
     	}
 	});
 
+	var ctx = $("#cdSlide1Chart1");
+	var myChart = new Chart(ctx, {
+	    type: 'horizontalBar',
+	    data: {
+	        labels: ["Control Group", "Intervention (Moisturiser) Group"],
+	        datasets: [{
+	            label: 'Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup>',
+	            data: [10.57, 5.76],
+	            backgroundColor: [
+	                'rgba(195, 70, 0, 0.4)',
+	                'rgba(0, 125, 195, 0.4)',
+	            ],
+	            borderColor: [
+	                'rgba(195, 70, 0 , 1)',
+	                'rgba(0, 125, 195, 1)',
+	            ],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	    	responsive: false,
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                	fontColor: "white",
+	                    fontSize: 14,
+	                    beginAtZero:true,
+	                    // fontFamily: "museo-sans"
+	                   
+	                }
+	            }],
+	            xAxes: [{
+	            	gridLines: { 
+	            		color: "#aaa",
+	            		 drawBorder: true
+	            	},
+	                ticks: {
+	                    fontColor: "white",
+	                    fontSize: 14,
+	                    stepSize: 1,
+	                    beginAtZero: true,
+	                    fontFamily: "'museo-sans'"
+	                }
+	            }]
+	        },
+	        scaleLabel: { fontColor: "white" },
+	        legend: { display: false },
+           	labels: {fontColor: "white"	},
+           	events: [],
+
+    	}
+	});
+
 	$('#caseStudy1Link').on('click', function(){
 		$('#caseStudy1').modal('show'); 
 	});
+
+
 
 </script>
 </body>
