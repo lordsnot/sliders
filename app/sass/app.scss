@@ -32,19 +32,22 @@ $small: 16px;
   line-height: 60px;  
 }
 
-@mixin st-page2(){
-  video {
-    position: relative;
-    width: 1500px;
-    height: 844px;
-    top: 20px;
-    left: 20px;
+@mixin st-page2() { 
+  div.video-container {
+    margin: 0 auto;
+    width: 1400px;
+    padding-top: 30px;
+    video {
+      position: relative;
+      width: 1400px;
+      height: 787px;
+    }
   }
 }
 
 @mixin st-page3() {
   
-  padding: 100px 20px;
+  padding: 40px 20px;
   span.big-number { 
     font-size: 64px;
     font-weight: bold;
@@ -53,21 +56,24 @@ $small: 16px;
   canvas { margin-top: 50px;}
   div.title {margin-bottom: 50px;}
   div.summary { margin-top: 50px;}
-  div.table { width: 400px; margin-top:40px; margin-left: 150px; }
-  div.table-cell { text-align:center;}
+  div.table { width: 600px; margin-top:40px; margin-left: 50px; }
+  div.table-cell { text-align:left;}
 }
 
 @mixin st-page4(){
+
   img { 
+
     width: 600px;
     display: block;
     position: relative;
     margin: 30px;
+
   }
 
 }
 
-@mixin st-page5(){
+@mixin st-page5() {
   
   div.sub-header  {
 
@@ -76,36 +82,52 @@ $small: 16px;
     margin-top: 130px;
 
   }
+
+  div {
+    display: block;
+    position: relative;
+    img { 
+      margin: 0 auto; 
+      display: block;
+      postion: absolute;
+    }
+  }
+
 }
 
 @mixin st-page6(){
   
   margin-top: 40px;
   padding: 40px;
+  font-size: 25px;
 
 }
 
 @mixin cd-page1(){
   
-    margin-top: 40px;
+    // margin-top: 40px;
 
 }
 
-@mixin cd-page2(){
+@mixin cd-page2() {
   
     margin-top: 40px;
-    padding: 20px;
+    padding: 0px 20px;
+
     img {
       position: relative;
       display: block;
       margin: auto;
       width: 70%;
     }
+
     h3 {
+
       margin-bottom: 30px;
+
     }
 
-    ul{
+    ul {
 
       @include normalFont()
       margin-top: 40px;
@@ -118,26 +140,94 @@ $small: 16px;
 
   div.product-container {
 
+    display: flex;
+    margin: 20px 10px;
+
     img {
 
         display: inline;
         position: relative;
         width: 190px;
+        margin-top: 30px;
 
     }
 
-    div.list-container {
-      
-      display: inline;
-      padding: 0px 0px 10px 20px;
+    div.list-container-table {
+
+      display: table;
+
+      div.list-container {
+        
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0px 0px 0px 30px;
+
+        ul li {
+          white-space: normal;
+        }
+
+      }
+
+      div.list-container.item1 {
+        padding-top: 80px
+      }
+      div.list-container.item2 {
+        padding-top: 80px
+      }
+      div.list-container.item3 {
+        padding-top: 80px
+      }
+      div.list-container.item4 {
+        padding-top: 80px
+      }
+    }
+  }
+}
+
+@mixin cd-page4() {
+
+  padding: 40px 80px 0px 80px;
+
+  div.quote {
+
+    text-align: center;
+    font-weight: bold;
+    @include largeFont();
+    margin: 80px 0px;
+  }
+
+  div.list {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    // width: 100%;
+
+    div.first {
+
+      text-align: right;
+      padding-right: 40px;
 
     }
 
   }
 
+  div.highlighted-text {
+    
+    @include largeFont();
+    border: 2px solid white;
+    padding: 20px;
+    background: $egoBlue;
+    
+  }
+
 }
 
+@mixin cd-page5() {
+  font-size: 25px;
+  padding: 40px 20px 0px;
 
+}
 
 body, div, p, h1, h2, h3, button {
   font-family: "museo-sans";
@@ -155,7 +245,6 @@ h1 {
   padding: 0;
   font-weight: bold;
 }
-// h3 { margin-tmeop: 30px;}
 
 .section {
   overflow: hidden;
@@ -177,21 +266,13 @@ h1 {
   z-index: 3;
 }
 
-img {
-  position: absolute;
-}
+img { position: absolute; }
 
-li {
-    margin: 0.3em 0;
-}
+li { margin: 0.3em 0; }
 
-sup {
-  font-size: 20%;
-}
+sup { font-size: 20%; }
 
-ol li {
-    font-weight: bold;
-}
+ol li { font-weight: bold; }
 li span { font-weight: normal; }
 
 
@@ -216,15 +297,12 @@ div.references-cta {
 
 div.references {
 
-
   opacity: 0;
   background-color: rgba(255,255,255, 0.9);
   color: #333;
   font-weight: 100;
   @include tinyFont();
-  // display: block;
   position: absolute;
-  // top: 0px;
   bottom: 20px;
   margin-left: 100px;
   padding: 15px;
@@ -290,6 +368,7 @@ div.references {
 #fullpage div.section {
   background: url(../img/hexagon_BG.jpg);
 }
+
 #section0 {
 
   .buttons {
@@ -345,15 +424,20 @@ div.references {
 }
 
 .slide .content-container {
+
   width: 100%;
   height: 100%;
   padding: 50px 60px 100px 60px;
+
   .content {
+
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     height: 100%;
     padding: 50px 85px 50px 85px;
+
     .header {
+
       position: relative;
       font-size: 46px;
       color: white;
@@ -362,7 +446,9 @@ div.references {
       border-bottom: 3px solid white;
       text-align: left;
       text-transform: uppercase;
+
     }
+
     .main-content {
 
       width: 100%;
@@ -370,13 +456,8 @@ div.references {
       color: white;
       font-size: 20px;
 
-      
-
-
-
-      .st-page2 {
-        @include st-page2()
-      }
+      .st-page2 { @include st-page2() }
+      .cd-page4 { @include cd-page4(); }
 
       .left {
         
@@ -432,23 +513,10 @@ div.references {
             left: 200px;
           }
         }
-        .st-page3 {
-
-          @include st-page3()
-             
-        }
-
-        .st-page4 {
-          @include st-page4()
-
-        }
-        .st-page5 {
-          @include st-page5()
-        }
-
-        .st-page6 {
-          @include st-page6()
-        } 
+        .st-page3 { @include st-page3(); }
+        .st-page4 { @include st-page4(); }
+        .st-page5 { @include st-page5(); }
+        .st-page6 { @include st-page6(); } 
 
         .cd-page1 {
 
@@ -477,11 +545,7 @@ div.references {
           }
         }
 
-        .cd-page2 {
-
-          @include cd-page2();
-
-        }
+        .cd-page2 { @include cd-page2(); }
 
         .cd-page3 {
 
@@ -489,6 +553,7 @@ div.references {
 
         }
 
+        .cd-page5 { @include cd-page5(); }
 
       }
       .right {
@@ -611,12 +676,13 @@ div.references {
 
             div.top-left {
 
-                padding: 10px;
+                padding: 0px 10px 10px;
                 width: 400px;
             }
 
             div.top-right {
-                padding: 10px;
+
+                padding: 0px 10px 10px;
                 width: 415px; 
 
                 ul {
@@ -626,10 +692,11 @@ div.references {
             }
           }
 
-          div.box{
+          div.box {
             padding: 20px 40px; 
             text-align: center;
             border: 2px solid white;
+            background-color: $egoBlue;
             @include largeFont();
           }
           h3 { margin-top: 30px;}
@@ -651,18 +718,20 @@ div.references {
           }
         }
 
-        .cd-page2 {
+        .cd-page2 { @include cd-page2(); }
+        .cd-page3 { @include cd-page3(); }
+        
+        .cd-page5 {
 
-          @include cd-page2();
-
+          @include cd-page5();
+          padding-top: 40px;
+          img {
+            width: 600px;
+            display: block;
+            position: relative;
+            margin: 0 auto;
+          }
         }
-
-        .cd-page3 {
-
-          @include cd-page3();
-
-        }
-
       }
     }
   }
@@ -680,7 +749,6 @@ div.references {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
 
   .modal-content {
       background-color: $darkEgoBlue;

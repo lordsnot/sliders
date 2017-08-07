@@ -185,12 +185,35 @@ div.references {
       height: 100%;
       color: white;
       font-size: 20px; }
-      .slide .content-container .content .main-content .st-page2 video {
-        position: relative;
-        width: 1500px;
-        height: 844px;
-        top: 20px;
-        left: 20px; }
+      .slide .content-container .content .main-content .st-page2 div.video-container {
+        margin: 0 auto;
+        width: 1400px;
+        padding-top: 30px; }
+        .slide .content-container .content .main-content .st-page2 div.video-container video {
+          position: relative;
+          width: 1400px;
+          height: 787px; }
+      .slide .content-container .content .main-content .cd-page4 {
+        padding: 40px 80px 0px 80px; }
+        .slide .content-container .content .main-content .cd-page4 div.quote {
+          text-align: center;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 44px;
+          margin: 80px 0px; }
+        .slide .content-container .content .main-content .cd-page4 div.list {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 80px; }
+          .slide .content-container .content .main-content .cd-page4 div.list div.first {
+            text-align: right;
+            padding-right: 40px; }
+        .slide .content-container .content .main-content .cd-page4 div.highlighted-text {
+          font-size: 36px;
+          line-height: 44px;
+          border: 2px solid white;
+          padding: 20px;
+          background: #007dc3; }
       .slide .content-container .content .main-content .left {
         width: 50%;
         height: 100%;
@@ -233,7 +256,7 @@ div.references {
           top: 567px;
           left: 200px; }
         .slide .content-container .content .main-content .left .st-page3 {
-          padding: 100px 20px; }
+          padding: 40px 20px; }
           .slide .content-container .content .main-content .left .st-page3 span.big-number {
             font-size: 64px;
             font-weight: bold;
@@ -245,11 +268,11 @@ div.references {
           .slide .content-container .content .main-content .left .st-page3 div.summary {
             margin-top: 50px; }
           .slide .content-container .content .main-content .left .st-page3 div.table {
-            width: 400px;
+            width: 600px;
             margin-top: 40px;
-            margin-left: 150px; }
+            margin-left: 50px; }
           .slide .content-container .content .main-content .left .st-page3 div.table-cell {
-            text-align: center; }
+            text-align: left; }
         .slide .content-container .content .main-content .left .st-page4 img {
           width: 600px;
           display: block;
@@ -259,31 +282,37 @@ div.references {
           width: 100%;
           text-align: center;
           margin-top: 130px; }
+        .slide .content-container .content .main-content .left .st-page5 div {
+          display: block;
+          position: relative; }
+          .slide .content-container .content .main-content .left .st-page5 div img {
+            margin: 0 auto;
+            display: block;
+            postion: absolute; }
         .slide .content-container .content .main-content .left .st-page6 {
           margin-top: 40px;
-          padding: 40px; }
-        .slide .content-container .content .main-content .left .cd-page1 {
-          margin-top: 40px; }
-          .slide .content-container .content .main-content .left .cd-page1 ul {
-            font-size: 36px;
-            line-height: 44px; }
-          .slide .content-container .content .main-content .left .cd-page1 ul:first-of-type {
-            margin: 40px 0px; }
-          .slide .content-container .content .main-content .left .cd-page1 div.nurse-figure {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 36px;
-            line-height: 44px; }
-            .slide .content-container .content .main-content .left .cd-page1 div.nurse-figure ul {
-              font-size: 48px; }
-            .slide .content-container .content .main-content .left .cd-page1 div.nurse-figure span.big-number {
-              font-size: 96px;
-              line-height: 80px;
-              font-weight: bold; }
+          padding: 40px;
+          font-size: 25px; }
+        .slide .content-container .content .main-content .left .cd-page1 ul {
+          font-size: 36px;
+          line-height: 44px; }
+        .slide .content-container .content .main-content .left .cd-page1 ul:first-of-type {
+          margin: 40px 0px; }
+        .slide .content-container .content .main-content .left .cd-page1 div.nurse-figure {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 40px;
+          font-size: 36px;
+          line-height: 44px; }
+          .slide .content-container .content .main-content .left .cd-page1 div.nurse-figure ul {
+            font-size: 48px; }
+          .slide .content-container .content .main-content .left .cd-page1 div.nurse-figure span.big-number {
+            font-size: 96px;
+            line-height: 80px;
+            font-weight: bold; }
         .slide .content-container .content .main-content .left .cd-page2 {
           margin-top: 40px;
-          padding: 20px; }
+          padding: 0px 20px; }
           .slide .content-container .content .main-content .left .cd-page2 img {
             position: relative;
             display: block;
@@ -295,13 +324,33 @@ div.references {
             font-size: 20px;
             line-height: 26px;
             margin-top: 40px; }
-        .slide .content-container .content .main-content .left .cd-page3 div.product-container img {
-          display: inline;
-          position: relative;
-          width: 190px; }
-        .slide .content-container .content .main-content .left .cd-page3 div.product-container div.list-container {
-          display: inline;
-          padding: 0px 0px 10px 20px; }
+        .slide .content-container .content .main-content .left .cd-page3 div.product-container {
+          display: flex;
+          margin: 20px 10px; }
+          .slide .content-container .content .main-content .left .cd-page3 div.product-container img {
+            display: inline;
+            position: relative;
+            width: 190px;
+            margin-top: 30px; }
+          .slide .content-container .content .main-content .left .cd-page3 div.product-container div.list-container-table {
+            display: table; }
+            .slide .content-container .content .main-content .left .cd-page3 div.product-container div.list-container-table div.list-container {
+              display: table-cell;
+              vertical-align: middle;
+              padding: 0px 0px 0px 30px; }
+              .slide .content-container .content .main-content .left .cd-page3 div.product-container div.list-container-table div.list-container ul li {
+                white-space: normal; }
+            .slide .content-container .content .main-content .left .cd-page3 div.product-container div.list-container-table div.list-container.item1 {
+              padding-top: 80px; }
+            .slide .content-container .content .main-content .left .cd-page3 div.product-container div.list-container-table div.list-container.item2 {
+              padding-top: 80px; }
+            .slide .content-container .content .main-content .left .cd-page3 div.product-container div.list-container-table div.list-container.item3 {
+              padding-top: 80px; }
+            .slide .content-container .content .main-content .left .cd-page3 div.product-container div.list-container-table div.list-container.item4 {
+              padding-top: 80px; }
+        .slide .content-container .content .main-content .left .cd-page5 {
+          font-size: 25px;
+          padding: 40px 20px 0px; }
       .slide .content-container .content .main-content .right {
         width: 50%;
         height: 100%;
@@ -371,7 +420,7 @@ div.references {
             font-weight: 100;
             float: right; }
         .slide .content-container .content .main-content .right .st-page3 {
-          padding: 100px 20px; }
+          padding: 40px 20px; }
           .slide .content-container .content .main-content .right .st-page3 span.big-number {
             font-size: 64px;
             font-weight: bold;
@@ -383,11 +432,11 @@ div.references {
           .slide .content-container .content .main-content .right .st-page3 div.summary {
             margin-top: 50px; }
           .slide .content-container .content .main-content .right .st-page3 div.table {
-            width: 400px;
+            width: 600px;
             margin-top: 40px;
-            margin-left: 150px; }
+            margin-left: 50px; }
           .slide .content-container .content .main-content .right .st-page3 div.table-cell {
-            text-align: center; }
+            text-align: left; }
         .slide .content-container .content .main-content .right .st-page4 img {
           width: 600px;
           display: block;
@@ -397,21 +446,28 @@ div.references {
           width: 100%;
           text-align: center;
           margin-top: 130px; }
+        .slide .content-container .content .main-content .right .st-page5 div {
+          display: block;
+          position: relative; }
+          .slide .content-container .content .main-content .right .st-page5 div img {
+            margin: 0 auto;
+            display: block;
+            postion: absolute; }
         .slide .content-container .content .main-content .right .st-page6 {
           margin-top: 40px;
-          padding: 40px; }
+          padding: 40px;
+          font-size: 25px; }
         .slide .content-container .content .main-content .right .cd-page1 {
-          margin-top: 40px;
           font-size: 36px;
           line-height: 44px; }
           .slide .content-container .content .main-content .right .cd-page1 div.top-container {
             display: flex;
             padding: 0px 10px; }
             .slide .content-container .content .main-content .right .cd-page1 div.top-container div.top-left {
-              padding: 10px;
+              padding: 0px 10px 10px;
               width: 400px; }
             .slide .content-container .content .main-content .right .cd-page1 div.top-container div.top-right {
-              padding: 10px;
+              padding: 0px 10px 10px;
               width: 415px; }
               .slide .content-container .content .main-content .right .cd-page1 div.top-container div.top-right ul {
                 font-size: 20px;
@@ -420,6 +476,7 @@ div.references {
             padding: 20px 40px;
             text-align: center;
             border: 2px solid white;
+            background-color: #007dc3;
             font-size: 36px;
             line-height: 44px; }
           .slide .content-container .content .main-content .right .cd-page1 h3 {
@@ -438,7 +495,7 @@ div.references {
               width: 415px; }
         .slide .content-container .content .main-content .right .cd-page2 {
           margin-top: 40px;
-          padding: 20px; }
+          padding: 0px 20px; }
           .slide .content-container .content .main-content .right .cd-page2 img {
             position: relative;
             display: block;
@@ -450,13 +507,39 @@ div.references {
             font-size: 20px;
             line-height: 26px;
             margin-top: 40px; }
-        .slide .content-container .content .main-content .right .cd-page3 div.product-container img {
-          display: inline;
-          position: relative;
-          width: 190px; }
-        .slide .content-container .content .main-content .right .cd-page3 div.product-container div.list-container {
-          display: inline;
-          padding: 0px 0px 10px 20px; }
+        .slide .content-container .content .main-content .right .cd-page3 div.product-container {
+          display: flex;
+          margin: 20px 10px; }
+          .slide .content-container .content .main-content .right .cd-page3 div.product-container img {
+            display: inline;
+            position: relative;
+            width: 190px;
+            margin-top: 30px; }
+          .slide .content-container .content .main-content .right .cd-page3 div.product-container div.list-container-table {
+            display: table; }
+            .slide .content-container .content .main-content .right .cd-page3 div.product-container div.list-container-table div.list-container {
+              display: table-cell;
+              vertical-align: middle;
+              padding: 0px 0px 0px 30px; }
+              .slide .content-container .content .main-content .right .cd-page3 div.product-container div.list-container-table div.list-container ul li {
+                white-space: normal; }
+            .slide .content-container .content .main-content .right .cd-page3 div.product-container div.list-container-table div.list-container.item1 {
+              padding-top: 80px; }
+            .slide .content-container .content .main-content .right .cd-page3 div.product-container div.list-container-table div.list-container.item2 {
+              padding-top: 80px; }
+            .slide .content-container .content .main-content .right .cd-page3 div.product-container div.list-container-table div.list-container.item3 {
+              padding-top: 80px; }
+            .slide .content-container .content .main-content .right .cd-page3 div.product-container div.list-container-table div.list-container.item4 {
+              padding-top: 80px; }
+        .slide .content-container .content .main-content .right .cd-page5 {
+          font-size: 25px;
+          padding: 40px 20px 0px;
+          padding-top: 40px; }
+          .slide .content-container .content .main-content .right .cd-page5 img {
+            width: 600px;
+            display: block;
+            position: relative;
+            margin: 0 auto; }
 
 .detailer-modal {
   display: none;
