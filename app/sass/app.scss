@@ -54,6 +54,10 @@ $small: 16px;
     line-height: 50px;
   }
   canvas { margin-top: 50px;}
+  img { 
+    position: relative;
+    // width: 700px;
+  }
   div.title {margin-bottom: 50px;}
   div.summary { margin-top: 50px;}
   div.table { width: 600px; margin-top:40px; margin-left: 50px; }
@@ -400,7 +404,7 @@ div.references {
     p {
       color: white;
       text-align: left;
-      font-size: 13px;
+      font-size: 17px;
     }
   }
   .ego-logo {

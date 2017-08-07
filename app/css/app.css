@@ -143,7 +143,7 @@ div.references {
   #section0 .title-copy p {
     color: white;
     text-align: left;
-    font-size: 13px; }
+    font-size: 17px; }
 
 #section0 .ego-logo {
   position: absolute;
@@ -263,6 +263,8 @@ div.references {
             line-height: 50px; }
           .slide .content-container .content .main-content .left .st-page3 canvas {
             margin-top: 50px; }
+          .slide .content-container .content .main-content .left .st-page3 img {
+            position: relative; }
           .slide .content-container .content .main-content .left .st-page3 div.title {
             margin-bottom: 50px; }
           .slide .content-container .content .main-content .left .st-page3 div.summary {
@@ -427,6 +429,8 @@ div.references {
             line-height: 50px; }
           .slide .content-container .content .main-content .right .st-page3 canvas {
             margin-top: 50px; }
+          .slide .content-container .content .main-content .right .st-page3 img {
+            position: relative; }
           .slide .content-container .content .main-content .right .st-page3 div.title {
             margin-bottom: 50px; }
           .slide .content-container .content .main-content .right .st-page3 div.summary {
