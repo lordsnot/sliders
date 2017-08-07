@@ -155,7 +155,7 @@ h1 {
   padding: 0;
   font-weight: bold;
 }
-// h3 { margin-top: 30px;}
+// h3 { margin-tmeop: 30px;}
 
 .section {
   overflow: hidden;
@@ -198,28 +198,34 @@ li span { font-weight: normal; }
 div.references-cta {
   
   position: relative;
-  top: 837px;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  top: 10px;
   left: 0px;
   height: 50px;
   width: 50px;
   background-color: $egoBlue;
-  color: white;
-  text-align: center;
   border: 1px solid white;
   border-radius: 8px;
 
 }
 
+
 div.references {
+
 
   opacity: 0;
   background-color: rgba(255,255,255, 0.9);
   color: #333;
   font-weight: 100;
   @include tinyFont();
-  display: inline-block;
-  position: relative;
-  bottom: 78px;
+  // display: block;
+  position: absolute;
+  // top: 0px;
+  bottom: 20px;
   margin-left: 100px;
   padding: 15px;
 
@@ -364,6 +370,10 @@ div.references {
       color: white;
       font-size: 20px;
 
+      
+
+
+
       .st-page2 {
         @include st-page2()
       }
@@ -500,6 +510,13 @@ div.references {
           }
           div {
             position: absolute;
+
+            .modal {
+              div {
+                position: relative;
+                z-index: 10000;
+              }
+            }
             &.right-copy-1 {
               top: 255px;
               left: 1055px;
@@ -648,6 +665,96 @@ div.references {
 
       }
     }
+  }
+}
+
+.detailer-modal {
+
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 1920px; /* Full width */
+  height: 1080px; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+
+  .modal-content {
+      background-color: $darkEgoBlue;
+      color: white;
+      font-size: 25px;
+      line-height: 33px;
+      border-radius: 2px solid white;
+      margin: 100px auto; /* 15% from the top and centered */
+      padding: 60px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+      height: 80%;
+     
+
+      div.modal-header {
+
+        width: 100%;
+        @include largerFont();
+
+      }
+
+      div.modal-content-container {     
+
+        padding-top: 30px;
+        display: flex;
+        p {
+            margin-bottom: 20px;
+        }
+
+        div.modal-left {
+
+          width: 50%;
+          padding-right: 20px;
+
+        }
+
+        div.modal-right {
+          
+          width: 50%;
+
+          hr { 
+            width: 80%; 
+            margin: 50px 10%;
+          }
+
+          p.quote {
+            text-align: center;
+            font-weight: bold;
+            font-size: 160%;
+            line-height: 130%;
+          }
+
+          p.client{
+            text-align: right;
+          }
+
+        }
+
+      }
+  }
+
+  /* The Close Button */
+  .modal-close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+
+  .modal-close:hover,
+  .modal-close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
   }
 }
 
