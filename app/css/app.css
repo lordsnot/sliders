@@ -11,11 +11,29 @@ div.table-row {
 div.table-cell {
   display: table-cell; }
 
+img {
+  position: absolute; }
+
+li {
+  margin: 0.3em 0; }
+
+sup {
+  font-size: 20%; }
+
+ol li {
+  font-weight: bold; }
+
+li span {
+  font-weight: normal; }
+
 h1 {
   font-size: 5em;
   color: #fff;
   margin: 0;
   padding: 0;
+  font-weight: bold; }
+
+h4 {
   font-weight: bold; }
 
 .section {
@@ -35,21 +53,6 @@ h1 {
   background-size: contain;
   object-fit: cover;
   z-index: 3; }
-
-img {
-  position: absolute; }
-
-li {
-  margin: 0.3em 0; }
-
-sup {
-  font-size: 20%; }
-
-ol li {
-  font-weight: bold; }
-
-li span {
-  font-weight: normal; }
 
 div.references-cta {
   position: relative;
@@ -180,6 +183,9 @@ div.references {
       border-bottom: 3px solid white;
       text-align: left;
       text-transform: uppercase; }
+    .slide .content-container .content .header.smaller {
+      font-size: 40px;
+      margin-bottom: 6px; }
     .slide .content-container .content .main-content {
       width: 100%;
       height: 100%;
@@ -447,6 +453,50 @@ div.references {
             margin-left: 50px; }
           .slide .content-container .content .main-content .right .st-page3 div.table-cell {
             text-align: left; }
+          .slide .content-container .content .main-content .right .st-page3 .summary {
+            height: 300px; }
+            .slide .content-container .content .main-content .right .st-page3 .summary .hex-copy {
+              position: relative;
+              width: 250px;
+              color: white;
+              z-index: 1000;
+              text-align: center;
+              font-size: 28px;
+              font-weight: 100;
+              line-height: 38px; }
+            .slide .content-container .content .main-content .right .st-page3 .summary #hex4-copy {
+              top: -155px;
+              left: 68px;
+              width: 200px;
+              font-size: 20px;
+              line-height: 30px; }
+              .slide .content-container .content .main-content .right .st-page3 .summary #hex4-copy span.fact {
+                font-size: 84px;
+                line-height: 86px;
+                font-weight: 700; }
+                .slide .content-container .content .main-content .right .st-page3 .summary #hex4-copy span.fact sup {
+                  font-size: 50%; }
+            .slide .content-container .content .main-content .right .st-page3 .summary #page3-hex4 {
+              position: relative;
+              top: 67px;
+              left: 20px; }
+            .slide .content-container .content .main-content .right .st-page3 .summary #hex5-copy {
+              top: -600px;
+              left: 470px;
+              width: 200px;
+              font-size: 20px;
+              line-height: 30px; }
+              .slide .content-container .content .main-content .right .st-page3 .summary #hex5-copy span.fact {
+                font-size: 84px;
+                line-height: 86px;
+                font-weight: 700; }
+                .slide .content-container .content .main-content .right .st-page3 .summary #hex5-copy span.fact sup {
+                  font-size: 50%; }
+            .slide .content-container .content .main-content .right .st-page3 .summary #page3-hex5 {
+              display: inline;
+              position: relative;
+              top: -376px;
+              left: 415px; }
         .slide .content-container .content .main-content .right .st-page4 img {
           width: 600px;
           display: block;
@@ -476,6 +526,12 @@ div.references {
             .slide .content-container .content .main-content .right .cd-page1 div.top-container div.top-left {
               padding: 0px 10px 10px;
               width: 400px; }
+              .slide .content-container .content .main-content .right .cd-page1 div.top-container div.top-left span.fine-print {
+                font-size: 16px;
+                line-height: 20px;
+                width: 100%;
+                text-align: center;
+                display: block; }
             .slide .content-container .content .main-content .right .cd-page1 div.top-container div.top-right {
               padding: 0px 10px 10px;
               width: 415px; }
@@ -483,6 +539,7 @@ div.references {
                 font-size: 20px;
                 line-height: 26px; }
           .slide .content-container .content .main-content .right .cd-page1 div.box {
+            margin-top: 20px;
             padding: 20px 40px;
             text-align: center;
             border: 2px solid white;
@@ -541,6 +598,12 @@ div.references {
               padding-top: 80px; }
             .slide .content-container .content .main-content .right .cd-page3 div.product-container div.list-container-table div.list-container.item4 {
               padding-top: 80px; }
+        .slide .content-container .content .main-content .right .cd-page3 div.footnote {
+          font-size: 16px;
+          line-height: 20px;
+          position: relative;
+          top: 10px;
+          left: -320px; }
         .slide .content-container .content .main-content .right .cd-page5 {
           font-size: 25px;
           padding: 40px 20px 0px;
@@ -550,6 +613,32 @@ div.references {
             display: block;
             position: relative;
             margin: 0 auto; }
+      .slide .content-container .content .main-content .mandatories {
+        display: table;
+        text-align: center;
+        margin-top: 600px;
+        width: 100%;
+        margin: 0 auto; }
+        .slide .content-container .content .main-content .mandatories div.content {
+          display: table-row; }
+          .slide .content-container .content .main-content .mandatories div.content .wraptocenter {
+            padding-top: 100px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            width: 100%;
+            height: 830px;
+            margin: 0 auto; }
+            .slide .content-container .content .main-content .mandatories div.content .wraptocenter img {
+              display: block;
+              position: relative;
+              margin: 0 auto; }
+            .slide .content-container .content .main-content .mandatories div.content .wraptocenter p {
+              margin-top: 100px; }
+          .slide .content-container .content .main-content .mandatories div.content .wraptocenter * {
+            vertical-align: middle; }
+        .slide .content-container .content .main-content .mandatories p {
+          display: block; }
 
 .detailer-modal {
   display: none;
