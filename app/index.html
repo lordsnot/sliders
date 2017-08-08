@@ -50,7 +50,7 @@
     		$.fn.fullpage.setAllowScrolling(false);
 
 			$('#gotoST').click(function() { 
-				$.fn.fullpage.silentMoveTo('page2', 0);
+				$.fn.fullpage.moveTo('page2', 0);
 			});
 
 			$('#gotoCD').click(function() { 
@@ -235,7 +235,7 @@
 			    								<div class="table-cell">Intervention (Moisturiser) Group </div><div class="table-cell"> 5.76<sup>*</sup></div><div class="table-cell">45% Reduction</div>
 			    							</div>
 			    						</div>
-			    						
+			    						<span class="fineprint">*p=0.004. A total of 1,396 skin tears on 424 residents were recorded during the study.</span>
 				    				</div>
 			    				</div>
 			    			</div>
@@ -249,7 +249,7 @@
 											<li>Incidence of skin tears was compared to data from an incidence survey from the hospital</li>
 										</ul>
 									</div>
-				    				<canvas id="stSlide3Chart2" width="700" height="150"></canvas>
+				    				<!-- <canvas id="stSlide3Chart2" width="700" height="150"></canvas> -->
 				    				<div class="summary">
 				    					<strong>Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup></strong>
 			    						<div class="table">
@@ -478,7 +478,7 @@
 				    					<div class="top-container">
 					    					<div class="top-left">
 					    						<h3>Causes of irritant contact dermatitis<sup>1</sup></h3>
-					    						<canvas id="cdSlide1Chart1" width="280" height="230"></canvas>	
+					    						<canvas id="cdSlide1Chart1" width="370" height="230"></canvas>	
 					    					</div>
 					    					<div class="top-right">
 					    						<h3>Causes of allergic contact dermatitis (ACD)<sup>1</sup></h3>
@@ -1010,11 +1010,11 @@ $('.nav-menu-item').on('click', function(){
 	            label: 'Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup>',
 	            data: [10.57, 5.76],
 	            backgroundColor: [
-	                'rgba(195, 70, 0, 0.4)',
+	                'rgba(135, 164, 180, 0.4)',
 	                'rgba(0, 125, 195, 0.4)',
 	            ],
 	            borderColor: [
-	                'rgba(195, 70, 0 , 1)',
+	                'rgba(135, 164, 180, 1)',
 	                'rgba(0, 125, 195, 1)',
 	            ],
 	            borderWidth: 1
@@ -1054,74 +1054,25 @@ $('.nav-menu-item').on('click', function(){
     	}
 	});
 
-	var ctx = $("#stSlide3Chart2");
-	var myChart2 = new Chart(ctx, {
-	    type: 'line',
-	    data: {
-	        labels: ["Control Group", "Intervention (Moisturiser) Group"],
-	        datasets: [{
-	            label: 'Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup>',
-	            data: [10.57, 5.76],
-	            backgroundColor: [
-	                // 'rgba(195, 70, 0, 0.4)',
-	                'rgba(0, 125, 195, 0.4)',
-	            ],
-	            borderColor: [
-	                // 'rgba(195, 70, 0 , 1)',
-	                'rgba(0, 125, 195, 1)',
-	            ],
-	            borderWidth: 1
-	        }]
-	    },
-	    options: {
-	    	responsive: false,
-	        scales: {
-	            yAxes: [{
-	                ticks: {
-	                	fontColor: "white",
-	                    fontSize: 14,
-	                    beginAtZero:true,
-	                    // fontFamily: "museo-sans"
-	                   
-	                }
-	            }],
-	            xAxes: [{
-	            	gridLines: { 
-	            		color: "#aaa",
-	            		 drawBorder: true
-	            	},
-	                ticks: {
-	                    fontColor: "white",
-	                    fontSize: 14,
-	                    stepSize: 1,
-	                    beginAtZero: true,
-	                    fontFamily: "'museo-sans'"
-	                }
-	            }]
-	        },
-	        scaleLabel: { fontColor: "white" },
-	        legend: { display: false },
-           	labels: {fontColor: "white"	},
-           	events: [],
-
-    	}
-	});
+	// 
 
 	var ctx = $("#cdSlide1Chart1");
 	var myChart = new Chart(ctx, {
 	    type: 'horizontalBar',
 	    data: {
-	        labels: ["Control Group", "Intervention (Moisturiser) Group"],
+	        labels: ["‘Wet’ work environments", "Hand cleansers", "Heat and/or sweating"],
 	        datasets: [{
 	            label: 'Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup>',
-	            data: [10.57, 5.76],
+	            data: [60, 40, 14],
 	            backgroundColor: [
-	                'rgba(195, 70, 0, 0.4)',
 	                'rgba(0, 125, 195, 0.4)',
+	                'rgba(135, 164, 180, 0.4)',
+	                'rgba(204, 217, 239, 0.4)'
 	            ],
 	            borderColor: [
-	                'rgba(195, 70, 0 , 1)',
 	                'rgba(0, 125, 195, 1)',
+	                'rgba(135, 164, 180, 1)',
+	                'rgba(204, 217, 239,  1)'
 	            ],
 	            borderWidth: 1
 	        }]
@@ -1130,12 +1081,11 @@ $('.nav-menu-item').on('click', function(){
 	    	responsive: false,
 	        scales: {
 	            yAxes: [{
+	            	display: true,
 	                ticks: {
 	                	fontColor: "white",
 	                    fontSize: 14,
-	                    beginAtZero:true,
-	                    // fontFamily: "museo-sans"
-	                   
+	                    beginAtZero:true	                   
 	                }
 	            }],
 	            xAxes: [{
@@ -1148,7 +1098,10 @@ $('.nav-menu-item').on('click', function(){
 	                    fontSize: 14,
 	                    stepSize: 1,
 	                    beginAtZero: true,
-	                    fontFamily: "'museo-sans'"
+	                    fontFamily: "'museo-sans'",
+				        min: 0,
+				        max: 80,
+				        stepSize: 10      
 	                }
 	            }]
 	        },
@@ -1163,6 +1116,60 @@ $('.nav-menu-item').on('click', function(){
 	$('#caseStudy1Link').on('click', function(){
 		$('#caseStudy1').modal('show'); 
 	});
+
+
+	var ctx = $("#stSlide3Chart2");
+	// var myChart2 = new Chart(ctx, {
+	//     type: 'line',
+	//     data: {
+	//         labels: ["Control Group", "Intervention (Moisturiser) Group"],
+	//         datasets: [{
+	//             label: 'Average monthly incidence rate per 1,000 occupied bed days<sup>1</sup>',
+	//             data: [10.57, 5.76],
+	//             backgroundColor: [
+	//                'rgba(0, 125, 195, 0.4)',
+	//                'rgba(135, 164, 180, 0.4)',
+	//             ],
+	//             borderColor: [
+	//                 'rgba(0, 125, 195, 1)',
+	//                 'rgba(135, 164, 180, 1)',
+	//             ],
+	//             borderWidth: 1
+	//         }]
+	//     },
+	//     options: {
+	//     	responsive: false,
+	//         scales: {
+	//             yAxes: [{
+	//                 ticks: {
+	//                 	fontColor: "white",
+	//                     fontSize: 14,
+	//                     beginAtZero:true,
+	//                     // fontFamily: "museo-sans"
+	                   
+	//                 }
+	//             }],
+	//             xAxes: [{
+	//             	gridLines: { 
+	//             		color: "#aaa",
+	//             		drawBorder: false
+	//             	},
+	//                 ticks: {
+	//                     fontColor: "white",
+	//                     fontSize: 12,
+	//                     stepSize: 10,
+	//                     beginAtZero: true,
+	//                     fontFamily: "'museo-sans'"
+	//                 }
+	//             }]
+	//         },
+	//         scaleLabel: { fontColor: "white" },
+	//         legend: { display: false },
+ //           	labels: { fontColor: "white" },
+ //           	events: [],
+
+ //    	}
+	// });
 
 </script>
 </body>

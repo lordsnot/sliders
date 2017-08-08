@@ -269,6 +269,9 @@ div.references {
             margin-bottom: 50px; }
           .slide .content-container .content .main-content .left .st-page3 div.summary {
             margin-top: 50px; }
+          .slide .content-container .content .main-content .left .st-page3 span.fineprint {
+            font-size: 16px;
+            line-height: 20px; }
           .slide .content-container .content .main-content .left .st-page3 div.table {
             width: 600px;
             margin-top: 40px;
@@ -435,6 +438,9 @@ div.references {
             margin-bottom: 50px; }
           .slide .content-container .content .main-content .right .st-page3 div.summary {
             margin-top: 50px; }
+          .slide .content-container .content .main-content .right .st-page3 span.fineprint {
+            font-size: 16px;
+            line-height: 20px; }
           .slide .content-container .content .main-content .right .st-page3 div.table {
             width: 600px;
             margin-top: 40px;
