@@ -85,18 +85,18 @@ $small: 16px;
     width: 100%; 
     text-align: center;
     margin-top: 130px;
-
+    margin-bottom: 40px;
   }
 
-  div {
-    display: block;
-    position: relative;
-    img { 
-      margin: 0 auto; 
+  img, button {
+      position: relative;
       display: block;
-      postion: absolute;
+      margin: auto;
+      width: 70%;
     }
-  }
+    button { 
+        margin-top: 40px;
+    }
 
 }
 
@@ -752,8 +752,15 @@ div.references {
 
             div.top-left {
 
-                padding: 0px 10px 10px;
-                width: 400px;
+                padding: 0px 5px 10px;
+                width: 535px;
+
+                h3 {
+
+                  margin-bottom: 36px;
+
+                }
+
                 span.fine-print {
                   @include smallFont();
                   // line-height: 10px;
@@ -786,7 +793,7 @@ div.references {
           h3 { margin-top: 30px;}
           div.bottom-container {
             display: flex;
-            padding: 10px;
+            padding: 0px 10px;
             ul {
               @include normalFont()
             }

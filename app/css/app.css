@@ -292,14 +292,15 @@ div.references {
         .slide .content-container .content .main-content .left .st-page5 div.sub-header {
           width: 100%;
           text-align: center;
-          margin-top: 130px; }
-        .slide .content-container .content .main-content .left .st-page5 div {
+          margin-top: 130px;
+          margin-bottom: 40px; }
+        .slide .content-container .content .main-content .left .st-page5 img, .slide .content-container .content .main-content .left .st-page5 button {
+          position: relative;
           display: block;
-          position: relative; }
-          .slide .content-container .content .main-content .left .st-page5 div img {
-            margin: 0 auto;
-            display: block;
-            postion: absolute; }
+          margin: auto;
+          width: 70%; }
+        .slide .content-container .content .main-content .left .st-page5 button {
+          margin-top: 40px; }
         .slide .content-container .content .main-content .left .st-page6 {
           margin-top: 40px;
           padding: 40px;
@@ -505,14 +506,15 @@ div.references {
         .slide .content-container .content .main-content .right .st-page5 div.sub-header {
           width: 100%;
           text-align: center;
-          margin-top: 130px; }
-        .slide .content-container .content .main-content .right .st-page5 div {
+          margin-top: 130px;
+          margin-bottom: 40px; }
+        .slide .content-container .content .main-content .right .st-page5 img, .slide .content-container .content .main-content .right .st-page5 button {
+          position: relative;
           display: block;
-          position: relative; }
-          .slide .content-container .content .main-content .right .st-page5 div img {
-            margin: 0 auto;
-            display: block;
-            postion: absolute; }
+          margin: auto;
+          width: 70%; }
+        .slide .content-container .content .main-content .right .st-page5 button {
+          margin-top: 40px; }
         .slide .content-container .content .main-content .right .st-page6 {
           margin-top: 40px;
           padding: 40px;
@@ -524,8 +526,10 @@ div.references {
             display: flex;
             padding: 0px 10px; }
             .slide .content-container .content .main-content .right .cd-page1 div.top-container div.top-left {
-              padding: 0px 10px 10px;
-              width: 400px; }
+              padding: 0px 5px 10px;
+              width: 535px; }
+              .slide .content-container .content .main-content .right .cd-page1 div.top-container div.top-left h3 {
+                margin-bottom: 36px; }
               .slide .content-container .content .main-content .right .cd-page1 div.top-container div.top-left span.fine-print {
                 font-size: 16px;
                 line-height: 20px;
@@ -550,7 +554,7 @@ div.references {
             margin-top: 30px; }
           .slide .content-container .content .main-content .right .cd-page1 div.bottom-container {
             display: flex;
-            padding: 10px; }
+            padding: 0px 10px; }
             .slide .content-container .content .main-content .right .cd-page1 div.bottom-container ul {
               font-size: 20px;
               line-height: 26px; }
