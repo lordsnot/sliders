@@ -22,6 +22,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.transit.min.js"></script>
 	<script src="js/Chart.js"></script>
  
 
@@ -40,6 +41,7 @@
 	<script type="text/javascript">
 
 		$(document).ready(function() {
+
 			$('#fullpage').fullpage({
 				verticalCentered: true,
 				// sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
@@ -57,7 +59,35 @@
 				$.fn.fullpage.silentMoveTo('page3', 0); 
 			});
 
-			 $("#timeline-img").animate({left: "-=1150", easing: "swing"}, 12000); //25000);
+			// $("#timeline-img").animate({left: "-=1150", easing: "swing"}, 12000); //25000);
+
+			setTimeout(function(){
+				$('.curtain-screen').delay().transition({
+	               		opacity: 0,
+					}, 600, 'snap');
+			}, 900);
+
+			setTimeout(function(){
+				$('.curtain-screen').detach();
+			}, 1500);
+
+			space = 30;
+    		setTimeout(function(){
+				$('.gon').each(function(index) {
+			       $(this).delay(space * index).transition({
+	               		opacity: 1,
+						perspective: '100px',
+						rotateY: '360deg',	
+						left: '+=150'	
+					}, 800, 'snap');
+			})
+			}, 1100);
+
+			setTimeout(function(){
+				$('#that-dude').delay().transition({
+	               		opacity: 1,
+					}, 1000, 'snap');
+			}, 1200);
 
 		});
 
@@ -70,7 +100,7 @@
 	<div id="fullpage">
 
 		<div class="section" id="section0">
-
+		<div class="curtain-screen"></div>
 			<div class="title-copy">
 				<h1>A reputation built on<br/><span class="blue">science and innovation.</span></h1>
 				<p class="copy">
@@ -79,7 +109,7 @@
 				</p>
 				<p class="copy">
 					Excellence in the quality of everything we do is inherent in our culture. We are always striving to improve our systems, processes 
-					and products. That’s why we invested $75-million – more than half of our sales revenue – in research and development last year.
+					and products.
 				</p>
 				<p class="copy">
 					Strong ethics are also central to our philosophy, particularly with regard to our relationships with health professionals, institutions, government, our customers and the communities in each of the countries we operate.
@@ -88,8 +118,25 @@
 			
 			<div class='ego-logo'><img src="img/ego-logo.png" /></div>
 
-			<img id="that-dude" src="img/that-dude2.png" alt="that dude"/>
-			<img id="timeline-img" src="img/timeline.png" alt="timeline"/>
+			<img id="that-dude" src="img/that-dude3.png" alt="that dude" />
+			<!-- <img id="timeline-img" src="img/timeline.png" alt="timeline"/> -->
+			<img id="gon1" class="gon test" src="img/gons/gon1.png" alt="gon1"/>
+			<img id="gon2" class="gon" src="img/gons/gon2.png" alt="gon2"/>
+			<img id="gon3" class="gon" src="img/gons/gon3.png" alt="gon3"/>
+			<img id="gon4" class="gon" src="img/gons/gon4.png" alt="gon4"/>
+			<img id="gon5" class="gon" src="img/gons/gon5.png" alt="gon5"/>
+			<img id="gon6" class="gon" src="img/gons/gon6.png" alt="gon6"/>
+			<img id="gon7" class="gon" src="img/gons/gon7.png" alt="gon7"/>
+			<img id="gon8" class="gon" src="img/gons/gon8.png" alt="gon8"/>
+			<img id="gon9" class="gon" src="img/gons/gon9.png" alt="gon9"/>
+			<img id="gon10" class="gon" src="img/gons/gon10.png" alt="gon10"/>
+			<img id="gon11" class="gon" src="img/gons/gon11.png" alt="gon11"/>
+			<img id="gon12" class="gon" src="img/gons/gon12.png" alt="gon12"/>
+			<img id="gon13" class="gon" src="img/gons/gon13.png" alt="gon13"/>
+			<img id="gon14" class="gon" src="img/gons/gon14.png" alt="gon14"/>
+			<img id="gon15" class="gon" src="img/gons/gon15.png" alt="gon15"/>
+			<img id="gon16" class="gon" src="img/gons/gon16.png" alt="gon16"/>
+			<img id="gon17" class="gon" src="img/gons/gon17.png" alt="gon16"/>
 
 			<div class="buttons">
 				<button class="btn btn-primary" id="gotoST">Skin Tear</button>
@@ -227,7 +274,8 @@
 			    			<div class="st-page2">
 				    			<div class="video-container">
 					    			<video controls="controls">
-									  <source src="video/video.ogg" type="video/ogg">
+					    				<source src="video/EGO0779_Music_v3.webm" type="video/webm">
+									  	<!-- <source src="video/video.ogg" type="video/ogg"> -->
 										Your browser does not support the video tag.
 									</video>
 								</div>
@@ -320,7 +368,7 @@
 			    			<div class="left">
 			    				<div class="st-page4">
 			    					<h3>1. Cleanse with QV Gentle Wash</h3>
-		    						<img src="img/gentle_wash.jpg" alt="Gentle Wash"/>
+		    						<img src="img/QV_Gentle_Wash_2.png" alt="Gentle Wash"/>
 
 			    					<div>
 				    					<ul>
@@ -344,7 +392,7 @@
 			    			<div class="right">
 			    				<div class="st-page4">
 			    					<h3>2. Moisturise with QV Skin Lotion twice daily</h3>
-		    						<img style="display: block;" src="img/skin_lotion.jpg" alt="Skin Lotion"/>
+		    						<img style="display: block;" src="img/QV_Skin_Lotion_2.png" alt="Skin Lotion"/>
 			    					<div>
 				    					<ul>
 				    						<li>pH balanced</li>
@@ -441,7 +489,7 @@
 		    		<div class="content">
 
 			    		<div class="header">
-			    			The benefits of QV in skin tear prevention
+			    			The benefits of using QV for skin tear prevention
 			    		</div>
 
 			    		<div class="main-content">
@@ -685,7 +733,7 @@
 				    				<div class="product-container">
 				    					<div class="product-title-image">
 					    					<h3>Aqium Gel</h3>
-							    			<img src="img/small_packs/aqium.jpg">
+							    			<img src="img/Aqium_Gel.png">
 							    		</div>
 						    			<div class="list-container-table">
 						    				<div class="list-container item1">
@@ -704,7 +752,7 @@
 							    	<div class="product-container">
 							    		<div class="product-title-image">
 					    					<h3>Silic 15</h3>
-							    			<img src="img/small_packs/silic.jpg">
+							    			<img src="img/Silic_15.png">
 							    		</div>
 						    			<div class="list-container-table">
 						    				<div class="list-container item2">
@@ -728,7 +776,7 @@
 			    					<div class="product-container">
 				    					<div class="product-title-image">
 					    					<h3>QV Gentle Wash</h3>
-							    			<img src="img/small_packs/gentle_wash.jpg">
+							    			<img src="img/QV_Gentle_Wash.png">
 							    		</div>
 						    			<div class="list-container-table">
 						    				<div class="list-container item3">
@@ -746,7 +794,7 @@
 							    	<div class="product-container">
 							    		<div class="product-title-image">
 					    					<h3>QV Skin Lotion</h3>
-							    			<img src="img/small_packs/skin_lotion.jpg">
+							    			<img src="img/QV_Skin_Lotion.png">
 							    		</div>
 						    			<div class="list-container-table">
 						    				<div class="list-container item4">
@@ -852,7 +900,7 @@
 		    				</div>
 		    				<div class="right">
 			    				<div class="cd-page5">
-			    					<img src="img/pack_shot.jpg" alt="pack shot"/>
+			    					<img src="img/product_group.png" alt="pack shot"/>
 			    				</div>
 		    				</div>
 		    			</div>
@@ -1006,20 +1054,30 @@
 
 <script>
 
+
 $('.modal-close').on('click', function() {
 	$(this).closest('.detailer-modal').css('display', 'none');
 });
 
 $('#bucklands-modal-button').on('click', function() {
 
+	$('#bucklands-modal').css('opacity', 0);
 	$(this).closest('div.content-container').prepend($('#bucklands-modal'));
-	$(this).closest('div.content-container').find('#bucklands-modal').css('display', 'block');
+	$('#bucklands-modal').css('display', 'block');
+	$(this).closest('div.content-container').find('#bucklands-modal').transition({
+	               		opacity: 1
+					}, 900, 'snap');
 
 });
+
 $('#willowbrooke-modal-button').on('click', function() {
 
+	$('#willowbrooke-modal').css('opacity', 0);
 	$(this).closest('div.content-container').prepend($('#willowbrooke-modal'));
-	$(this).closest('div.content-container').find('#willowbrooke-modal').css('display', 'block');
+	$('#willowbrooke-modal').css('display', 'block');
+	$(this).closest('div.content-container').find('#willowbrooke-modal').transition({
+	               		opacity: 1
+					}, 900, 'snap');
 
 });
 

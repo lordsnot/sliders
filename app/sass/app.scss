@@ -69,10 +69,10 @@ $small: 16px;
 
   img { 
 
-    width: 600px;
+    width: 360px;
     display: block;
     position: relative;
-    margin: 30px;
+    margin: 0px auto;
 
   }
 
@@ -152,7 +152,7 @@ $small: 16px;
 
         display: inline;
         position: relative;
-        width: 190px;
+        width: 230px;
         margin-top: 30px;
 
     }
@@ -260,6 +260,118 @@ h1 {
 
 h4 {
   font-weight: bold;
+}
+.gon {
+  opacity: 0;
+  transform: rotateY(180deg);
+}
+
+$gonTopOrigin: 615;
+$gonLeftOrigin: 170;
+$gonHeight: 192;
+$gonHalfHeight: 96;
+$gonWidth: 167;
+
+#gon1 {
+  position: absolute;
+  top: $gonTopOrigin * 1px;
+  left: $gonLeftOrigin * 1px;
+}
+
+#gon2 {
+  position: absolute;
+  top: ($gonTopOrigin + $gonHeight) * 1px;
+  left: $gonLeftOrigin * 1px;
+}
+
+#gon3 {
+  position: absolute;
+  top: ($gonTopOrigin + $gonHalfHeight) * 1px;
+  left: ($gonLeftOrigin + $gonWidth) * 1px;
+}
+
+#gon4 {
+  position: absolute;
+  top: $gonTopOrigin * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 2)) * 1px;
+}
+
+#gon5 {
+  position: absolute;
+  top: ($gonTopOrigin + $gonHeight) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 2)) * 1px;
+}
+
+#gon6 {
+  position: absolute;
+  top: ($gonTopOrigin - $gonHalfHeight) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 3)) * 1px;
+}
+
+#gon7 {
+  position: absolute;
+  top: ($gonTopOrigin + $gonHalfHeight) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 3)) * 1px;
+}
+
+#gon8 {
+  position: absolute;
+  top: ($gonTopOrigin - $gonHeight) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 4)) * 1px;
+}
+
+#gon9 {
+  position: absolute;
+  top: ($gonTopOrigin - $gonHeight - $gonHalfHeight) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 5)) * 1px;
+}
+
+#gon10 {
+  position: absolute;
+  top: ($gonTopOrigin - $gonHalfHeight) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 5)) * 1px;
+}
+
+#gon11 {
+  position: absolute;
+  top: ($gonTopOrigin + $gonHalfHeight) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 5)) * 1px;
+}
+
+#gon12 {
+  position: absolute;
+  top: ($gonTopOrigin) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 6)) * 1px;
+}
+
+#gon13 {
+  position: absolute;
+  top: ($gonTopOrigin - $gonHeight - $gonHalfHeight) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 7)) * 1px;
+}
+
+#gon14 {
+  position: absolute;
+  top: ($gonTopOrigin - $gonHalfHeight) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 7)) * 1px;
+}
+
+#gon15 {
+  position: absolute;
+  top: ($gonTopOrigin + $gonHalfHeight) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 7)) * 1px;
+}
+
+#gon16 {
+  position: absolute;
+  top: ($gonTopOrigin - $gonHeight) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 8)) * 1px;
+}
+
+#gon17 {
+  position: absolute;
+  top: ($gonTopOrigin) * 1px;
+  left: ($gonLeftOrigin + ($gonWidth * 8)) * 1px;
 }
 
 .section {
@@ -377,6 +489,16 @@ div.references {
 
 #section0 {
 
+  .curtain-screen{
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      z-index: 10000;
+  }
+
   .buttons {
     z-index: 1000;
     position: absolute;
@@ -392,7 +514,7 @@ div.references {
 
   .title-copy {
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 100px;
     color: white;
     width: 900px;
@@ -411,16 +533,18 @@ div.references {
   }
   .ego-logo {
     position: absolute;
-    top: 100px;
+    top: 50px;
     right: 287px;
     img {
       width: 187px;
     }
   }
   #that-dude {
-    left: 100px;
-    top: 503px;
+    width: 300px;
+    left: 73px;
+    top: 458px;
     z-index: 500;
+    opacity: 0;
   }
   #timeline-img {
     left: 1500px;
@@ -817,8 +941,8 @@ div.references {
             // color: red; 
             @include smallFont();
             position: relative;
-            top: 10px;
-            left: -320px;
+            top: 90px;
+            left: -245px;
           }
     
         }
@@ -827,7 +951,7 @@ div.references {
         .cd-page5 {
 
           @include cd-page5();
-          padding-top: 40px;
+          padding-top: 140px;
           img {
             width: 600px;
             display: block;

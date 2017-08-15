@@ -36,6 +36,95 @@ h1 {
 h4 {
   font-weight: bold; }
 
+.gon {
+  opacity: 0;
+  transform: rotateY(180deg); }
+
+#gon1 {
+  position: absolute;
+  top: 615px;
+  left: 170px; }
+
+#gon2 {
+  position: absolute;
+  top: 807px;
+  left: 170px; }
+
+#gon3 {
+  position: absolute;
+  top: 711px;
+  left: 337px; }
+
+#gon4 {
+  position: absolute;
+  top: 615px;
+  left: 504px; }
+
+#gon5 {
+  position: absolute;
+  top: 807px;
+  left: 504px; }
+
+#gon6 {
+  position: absolute;
+  top: 519px;
+  left: 671px; }
+
+#gon7 {
+  position: absolute;
+  top: 711px;
+  left: 671px; }
+
+#gon8 {
+  position: absolute;
+  top: 423px;
+  left: 838px; }
+
+#gon9 {
+  position: absolute;
+  top: 327px;
+  left: 1005px; }
+
+#gon10 {
+  position: absolute;
+  top: 519px;
+  left: 1005px; }
+
+#gon11 {
+  position: absolute;
+  top: 711px;
+  left: 1005px; }
+
+#gon12 {
+  position: absolute;
+  top: 615px;
+  left: 1172px; }
+
+#gon13 {
+  position: absolute;
+  top: 327px;
+  left: 1339px; }
+
+#gon14 {
+  position: absolute;
+  top: 519px;
+  left: 1339px; }
+
+#gon15 {
+  position: absolute;
+  top: 711px;
+  left: 1339px; }
+
+#gon16 {
+  position: absolute;
+  top: 423px;
+  left: 1506px; }
+
+#gon17 {
+  position: absolute;
+  top: 615px;
+  left: 1506px; }
+
 .section {
   overflow: hidden; }
 
@@ -121,6 +210,15 @@ div.references {
 #fullpage div.section {
   background: url(../img/hexagon_BG.jpg); }
 
+#section0 .curtain-screen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 10000; }
+
 #section0 .buttons {
   z-index: 1000;
   position: absolute;
@@ -134,7 +232,7 @@ div.references {
 
 #section0 .title-copy {
   position: absolute;
-  top: 100px;
+  top: 50px;
   left: 100px;
   color: white;
   width: 900px; }
@@ -150,15 +248,17 @@ div.references {
 
 #section0 .ego-logo {
   position: absolute;
-  top: 100px;
+  top: 50px;
   right: 287px; }
   #section0 .ego-logo img {
     width: 187px; }
 
 #section0 #that-dude {
-  left: 100px;
-  top: 503px;
-  z-index: 500; }
+  width: 300px;
+  left: 73px;
+  top: 458px;
+  z-index: 500;
+  opacity: 0; }
 
 #section0 #timeline-img {
   left: 1500px;
@@ -285,10 +385,10 @@ div.references {
           .slide .content-container .content .main-content .left .st-page3 div.table-cell {
             text-align: left; }
         .slide .content-container .content .main-content .left .st-page4 img {
-          width: 600px;
+          width: 360px;
           display: block;
           position: relative;
-          margin: 30px; }
+          margin: 0px auto; }
         .slide .content-container .content .main-content .left .st-page5 div.sub-header {
           width: 100%;
           text-align: center;
@@ -342,7 +442,7 @@ div.references {
           .slide .content-container .content .main-content .left .cd-page3 div.product-container img {
             display: inline;
             position: relative;
-            width: 190px;
+            width: 230px;
             margin-top: 30px; }
           .slide .content-container .content .main-content .left .cd-page3 div.product-container div.list-container-table {
             display: table; }
@@ -499,10 +599,10 @@ div.references {
               top: -376px;
               left: 415px; }
         .slide .content-container .content .main-content .right .st-page4 img {
-          width: 600px;
+          width: 360px;
           display: block;
           position: relative;
-          margin: 30px; }
+          margin: 0px auto; }
         .slide .content-container .content .main-content .right .st-page5 div.sub-header {
           width: 100%;
           text-align: center;
@@ -584,7 +684,7 @@ div.references {
           .slide .content-container .content .main-content .right .cd-page3 div.product-container img {
             display: inline;
             position: relative;
-            width: 190px;
+            width: 230px;
             margin-top: 30px; }
           .slide .content-container .content .main-content .right .cd-page3 div.product-container div.list-container-table {
             display: table; }
@@ -606,12 +706,12 @@ div.references {
           font-size: 16px;
           line-height: 20px;
           position: relative;
-          top: 10px;
-          left: -320px; }
+          top: 90px;
+          left: -245px; }
         .slide .content-container .content .main-content .right .cd-page5 {
           font-size: 25px;
           padding: 40px 20px 0px;
-          padding-top: 40px; }
+          padding-top: 140px; }
           .slide .content-container .content .main-content .right .cd-page5 img {
             width: 600px;
             display: block;
