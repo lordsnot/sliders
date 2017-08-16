@@ -327,7 +327,7 @@ div.references {
         height: 100%;
         float: left; }
         .slide .content-container .content .main-content .left .st-page1 .hex-copy {
-          position: absolute;
+          position: relative;
           width: 250px;
           color: white;
           z-index: 1000;
@@ -335,15 +335,27 @@ div.references {
           font-size: 28px;
           font-weight: 100;
           line-height: 38px; }
+        .slide .content-container .content .main-content .left .st-page1 #page1-hex1 {
+          position: relative;
+          top: 80px;
+          left: 60px; }
+        .slide .content-container .content .main-content .left .st-page1 #page1-hex2 {
+          position: relative;
+          top: -278px;
+          left: 365px; }
+        .slide .content-container .content .main-content .left .st-page1 #page1-hex3 {
+          position: relative;
+          top: -676px;
+          left: 60px; }
         .slide .content-container .content .main-content .left .st-page1 #hex1-copy {
-          top: 294px;
-          left: 270px; }
+          top: -180px;
+          left: 130px; }
         .slide .content-container .content .main-content .left .st-page1 #hex2-copy {
-          top: 451px;
-          left: 568px; }
+          top: -564px;
+          left: 432px; }
         .slide .content-container .content .main-content .left .st-page1 #hex3-copy {
-          top: 644px;
-          left: 248px;
+          top: -940px;
+          left: 108px;
           width: 300px;
           font-size: 20px;
           line-height: 30px; }
@@ -351,18 +363,6 @@ div.references {
             font-size: 84px;
             line-height: 86px;
             font-weight: 700; }
-        .slide .content-container .content .main-content .left .st-page1 #page1-hex1 {
-          position: absolute;
-          top: 220px;
-          left: 200px; }
-        .slide .content-container .content .main-content .left .st-page1 #page1-hex2 {
-          position: absolute;
-          top: 393px;
-          left: 501px; }
-        .slide .content-container .content .main-content .left .st-page1 #page1-hex3 {
-          position: absolute;
-          top: 567px;
-          left: 200px; }
         .slide .content-container .content .main-content .left .st-page3 {
           padding: 80px 20px; }
           .slide .content-container .content .main-content .left .st-page3 span.big-number {
@@ -473,16 +473,14 @@ div.references {
         float: right; }
         .slide .content-container .content .main-content .right .st-page1 li {
           line-height: 28px; }
-        .slide .content-container .content .main-content .right .st-page1 svg {
-          position: absolute; }
-          .slide .content-container .content .main-content .right .st-page1 svg#hex-bullet-1 {
-            top: 255px;
-            left: 1000px; }
-          .slide .content-container .content .main-content .right .st-page1 svg#hex-bullet-2 {
-            top: 550px;
-            left: 1000px; }
+        .slide .content-container .content .main-content .right .st-page1 svg#hex-bullet-1 {
+          top: 255px;
+          left: 1000px; }
+        .slide .content-container .content .main-content .right .st-page1 svg#hex-bullet-2 {
+          top: 550px;
+          left: 1000px; }
         .slide .content-container .content .main-content .right .st-page1 div {
-          position: absolute; }
+          position: relative; }
           .slide .content-container .content .main-content .right .st-page1 div .modal div {
             position: relative;
             z-index: 10000; }

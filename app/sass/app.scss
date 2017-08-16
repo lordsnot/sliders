@@ -611,7 +611,7 @@ div.references {
         .st-page1 {
 
           .hex-copy {
-            position: absolute;
+            position: relative;
             width: 250px;
             color: white;
             z-index: 1000;
@@ -620,17 +620,33 @@ div.references {
             font-weight: 100;
             line-height: 38px;
           }
+
+          #page1-hex1 {
+            position: relative;
+            top: 80px;
+            left: 60px;
+          }
+          #page1-hex2 {
+            position: relative;
+            top: -278px;
+            left: 365px;
+          }
+          #page1-hex3 {
+            position: relative;
+            top: -676px;
+            left: 60px;
+          }
           #hex1-copy {
-            top: 294px;
-            left: 270px;
+            top: -180px;
+            left: 130px;
           }
           #hex2-copy {
-            top: 451px;
-            left: 568px;
+            top: -564px;
+            left: 432px;
           }
           #hex3-copy {
-            top: 644px;
-            left: 248px;
+            top: -940px;
+            left: 108px;
             width: 300px;
             font-size: 20px;
             line-height: 30px;
@@ -639,21 +655,6 @@ div.references {
               line-height: 86px;
               font-weight: 700;
             }
-          }
-          #page1-hex1 {
-            position: absolute;
-            top: 220px;
-            left: 200px;
-          }
-          #page1-hex2 {
-            position: absolute;
-            top: 393px;
-            left: 501px;
-          }
-          #page1-hex3 {
-            position: absolute;
-            top: 567px;
-            left: 200px;
           }
         }
         .st-page3 { 
@@ -713,7 +714,7 @@ div.references {
         .st-page1 {
           li { line-height: 28px;}
           svg {
-            position: absolute;
+            
              &#hex-bullet-1 {
               top: 255px;
               left: 1000px;
@@ -724,8 +725,8 @@ div.references {
             }
           }
           div {
-            position: absolute;
 
+            position: relative;
             .modal {
               div {
                 position: relative;
