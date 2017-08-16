@@ -286,6 +286,8 @@ div.references {
     .slide .content-container .content .header.smaller {
       font-size: 40px;
       margin-bottom: 6px; }
+      .slide .content-container .content .header.smaller span.capitalize {
+        text-transform: capitalize; }
     .slide .content-container .content .main-content {
       width: 100%;
       height: 100%;
@@ -362,7 +364,7 @@ div.references {
           top: 567px;
           left: 200px; }
         .slide .content-container .content .main-content .left .st-page3 {
-          padding: 40px 20px; }
+          padding: 80px 20px; }
           .slide .content-container .content .main-content .left .st-page3 span.big-number {
             font-size: 64px;
             font-weight: bold;
@@ -384,6 +386,8 @@ div.references {
             margin-left: 50px; }
           .slide .content-container .content .main-content .left .st-page3 div.table-cell {
             text-align: left; }
+          .slide .content-container .content .main-content .left .st-page3 .list {
+            margin-bottom: 80px; }
         .slide .content-container .content .main-content .left .st-page4 img {
           width: 360px;
           display: block;
@@ -532,7 +536,7 @@ div.references {
             font-weight: 100;
             float: right; }
         .slide .content-container .content .main-content .right .st-page3 {
-          padding: 40px 20px; }
+          padding: 80px 20px; }
           .slide .content-container .content .main-content .right .st-page3 span.big-number {
             font-size: 64px;
             font-weight: bold;
@@ -582,7 +586,7 @@ div.references {
               top: 67px;
               left: 20px; }
             .slide .content-container .content .main-content .right .st-page3 .summary #hex5-copy {
-              top: -600px;
+              top: -559px;
               left: 470px;
               width: 200px;
               font-size: 20px;
@@ -596,7 +600,7 @@ div.references {
             .slide .content-container .content .main-content .right .st-page3 .summary #page3-hex5 {
               display: inline;
               position: relative;
-              top: -376px;
+              top: -343px;
               left: 415px; }
         .slide .content-container .content .main-content .right .st-page4 img {
           width: 360px;

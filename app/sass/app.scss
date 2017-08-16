@@ -47,7 +47,7 @@ $small: 16px;
 
 @mixin st-page3() {
   
-  padding: 40px 20px;
+  padding: 80px 20px;
   span.big-number { 
     font-size: 64px;
     font-weight: bold;
@@ -584,6 +584,12 @@ div.references {
       font-size: 40px;
       margin-bottom: 6px;
 
+      span.capitalize {
+
+        text-transform: capitalize;
+
+      }
+      
     }
 
     .main-content {
@@ -650,7 +656,12 @@ div.references {
             left: 200px;
           }
         }
-        .st-page3 { @include st-page3(); }
+        .st-page3 { 
+          @include st-page3(); 
+          .list {
+            margin-bottom: 80px;
+          }
+        }
         .st-page4 { @include st-page4(); }
         .st-page5 { @include st-page5(); }
         .st-page6 { @include st-page6(); } 
@@ -826,7 +837,7 @@ div.references {
             }
 
             #hex5-copy {
-              top: -600px;
+              top: -559px;
               left: 470px;
               width: 200px;
               font-size: 20px;
@@ -844,7 +855,7 @@ div.references {
             #page3-hex5 {
               display: inline;
               position: relative;
-              top: -376px;
+              top: -343px;
               left: 415px;
             }
 
