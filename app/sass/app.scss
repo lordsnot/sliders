@@ -11,6 +11,7 @@ $small: 16px;
   font-size: 12px;
   line-height: 16px;
 }
+
 @mixin smallFont() {
   font-size: 16px;
   line-height: 20px;
@@ -21,7 +22,6 @@ $small: 16px;
   line-height: 26px;  
 }
 
-
 @mixin largeFont() {
   font-size: 36px;
   line-height: 44px;  
@@ -30,6 +30,67 @@ $small: 16px;
 @mixin largerFont() {
   font-size: 48px;
   line-height: 60px;  
+}
+
+@mixin st-pagelp() { 
+
+  padding: 100px;
+
+  img.st-home-image {
+
+    display: block;
+    height: 568px;
+
+  }
+
+  #st-menu-hp {
+
+    display: block;
+    opacity: 1;
+    border: 2px solid white;
+    border-radius: 8px;
+    @include normalFont();
+    font-weight: bold;
+    // background-color: $darkEgoBlue;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1000;
+    padding: 20px;
+    min-width: 300px;
+    width: 40%;
+    float: right;
+    height: 568px;
+    
+    img {
+
+      display: block;
+      width: 150px;
+      position: relative;
+      margin: auto;
+
+    }
+
+    ul {
+
+      display: block;
+      margin-top: 20px; 
+      padding: 0;
+      
+      li {
+
+        margin: 0px;
+        padding: 17px 0px;
+        border-top: 1px solid white;
+        list-style-type: none;
+
+      }
+
+      li:last-of-type{
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+
 }
 
 @mixin st-page2() { 
@@ -480,7 +541,6 @@ div.references {
       border-bottom: 1px solid white;
     }
   }
-
 }
 
 #fullpage div.section {
@@ -599,6 +659,7 @@ div.references {
       color: white;
       font-size: 20px;
 
+      .st-pagelp { @include st-pagelp(); }
       .st-page2 { @include st-page2() }
       .cd-page4 { @include cd-page4(); }
 
@@ -712,20 +773,21 @@ div.references {
         float: right;
 
         .st-page1 {
+          margin-top:100px;
           li { line-height: 28px;}
           svg {
             
-             &#hex-bullet-1 {
+            &#hex-bullet-1 {
               top: 255px;
-              left: 1000px;
+              left: 10px;
             }
             &#hex-bullet-2 {
-              top: 550px;
-              left: 1000px;
+              top: 650px;
+              left: 10px;
             }
           }
-          div {
 
+          div {
             position: relative;
             .modal {
               div {
@@ -734,15 +796,15 @@ div.references {
               }
             }
             &.right-copy-1 {
-              top: 255px;
-              left: 1055px;
+              top: -53px;
+              left: 100px;
               color: white;
               font-size: 20px;
               line-height: 40px;
             }
             &.right-copy-2 {
-              top: 550px;
-              left: 1055px;
+              top: -53px;
+              left: 100px;
               color: white;
               font-size: 20px;
               line-height: 40px;
@@ -756,12 +818,12 @@ div.references {
               z-index: 1000;
             }
             &#hex-bullet-1 {
-              top: 260px;
-              left: 1016px;
+              top: 32px;
+              left: 16px;
             }
             &#hex-bullet-2 {
-              top: 555px;
-              left: 1015px;
+              top: 32px;
+              left: 16px;
             }
             &.callout {
               left: 1052px;
