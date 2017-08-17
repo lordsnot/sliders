@@ -86,7 +86,10 @@ $small: 16px;
       }
 
       li:last-of-type{
-        border-bottom: 1px solid white;
+        // border-bottom: 1px solid white;
+      }
+      li:first-of-type{
+          border-top: none;
       }
     }
   }
@@ -128,6 +131,7 @@ $small: 16px;
 
 @mixin st-page4(){
 
+
   img { 
 
     width: 360px;
@@ -135,6 +139,10 @@ $small: 16px;
     position: relative;
     margin: 0px auto;
 
+  }
+
+  li{
+    @include smallFont();
   }
 
 }
@@ -663,6 +671,13 @@ div.references {
       .st-page2 { @include st-page2() }
       .cd-page4 { @include cd-page4(); }
 
+      .intro {
+
+        width: 100%;
+        // background-color: orange;
+
+      }
+
       .left {
         
         width: 50%;
@@ -997,12 +1012,12 @@ div.references {
             }
             div.bottom-left {
                 padding: 10px;
-                width: 400px;
+                width: 360px;
             }
             
             div.bottom-right {
                 padding: 10px;
-                width: 415px; 
+                width: 455px; 
             }
           }
         }

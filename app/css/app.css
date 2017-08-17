@@ -328,8 +328,8 @@ div.references {
               padding: 17px 0px;
               border-top: 1px solid white;
               list-style-type: none; }
-            .slide .content-container .content .main-content .st-pagelp #st-menu-hp ul li:last-of-type {
-              border-bottom: 1px solid white; }
+            .slide .content-container .content .main-content .st-pagelp #st-menu-hp ul li:first-of-type {
+              border-top: none; }
       .slide .content-container .content .main-content .st-page2 div.video-container {
         margin: 0 auto;
         width: 1400px;
@@ -359,6 +359,8 @@ div.references {
           border: 2px solid white;
           padding: 20px;
           background: #007dc3; }
+      .slide .content-container .content .main-content .intro {
+        width: 100%; }
       .slide .content-container .content .main-content .left {
         width: 50%;
         height: 100%;
@@ -430,6 +432,9 @@ div.references {
           display: block;
           position: relative;
           margin: 0px auto; }
+        .slide .content-container .content .main-content .left .st-page4 li {
+          font-size: 16px;
+          line-height: 20px; }
         .slide .content-container .content .main-content .left .st-page5 div.sub-header {
           width: 100%;
           text-align: center;
@@ -644,6 +649,9 @@ div.references {
           display: block;
           position: relative;
           margin: 0px auto; }
+        .slide .content-container .content .main-content .right .st-page4 li {
+          font-size: 16px;
+          line-height: 20px; }
         .slide .content-container .content .main-content .right .st-page5 div.sub-header {
           width: 100%;
           text-align: center;
@@ -701,10 +709,10 @@ div.references {
               line-height: 26px; }
             .slide .content-container .content .main-content .right .cd-page1 div.bottom-container div.bottom-left {
               padding: 10px;
-              width: 400px; }
+              width: 360px; }
             .slide .content-container .content .main-content .right .cd-page1 div.bottom-container div.bottom-right {
               padding: 10px;
-              width: 415px; }
+              width: 455px; }
         .slide .content-container .content .main-content .right .cd-page2 {
           margin-top: 40px;
           padding: 0px 20px; }
