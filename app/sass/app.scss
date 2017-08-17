@@ -261,22 +261,21 @@ $small: 16px;
 
 @mixin cd-page4() {
 
-  padding: 40px 80px 0px 80px;
+  padding: 20px 80px 0px 80px;
 
   div.quote {
 
     text-align: center;
     font-weight: bold;
     @include largeFont();
-    margin: 80px 0px;
+    margin: 40px 0px;
   }
 
   div.list {
 
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
-    // width: 100%;
+    width: 60%;
+    margin: 140px 0px 80px 700px; 
+    // float: right;
 
     div.first {
 
@@ -293,7 +292,13 @@ $small: 16px;
     border: 2px solid white;
     padding: 20px;
     background: $egoBlue;
-    
+    margin-top: 118px;
+  }
+
+  img.nurse {
+    width: 350px;
+    display: block;
+    margin-left: 200px;
   }
 
 }
@@ -675,7 +680,6 @@ div.references {
 
         width: 100%;
         // background-color: orange;
-
       }
 
       .left {
