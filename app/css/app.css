@@ -298,7 +298,14 @@ div.references {
         .slide .content-container .content .main-content .st-pagelp img.st-home-image {
           display: block;
           height: 568px; }
+        .slide .content-container .content .main-content .st-pagelp img.cd-home-image {
+          display: block;
+          height: 477px; }
         .slide .content-container .content .main-content .st-pagelp #st-menu-hp {
+          height: 568px; }
+        .slide .content-container .content .main-content .st-pagelp #cd-menu-hp {
+          height: 477px; }
+        .slide .content-container .content .main-content .st-pagelp #st-menu-hp, .slide .content-container .content .main-content .st-pagelp #cd-menu-hp {
           display: block;
           opacity: 1;
           border: 2px solid white;
@@ -312,23 +319,22 @@ div.references {
           padding: 20px;
           min-width: 300px;
           width: 40%;
-          float: right;
-          height: 568px; }
-          .slide .content-container .content .main-content .st-pagelp #st-menu-hp img {
+          float: right; }
+          .slide .content-container .content .main-content .st-pagelp #st-menu-hp img, .slide .content-container .content .main-content .st-pagelp #cd-menu-hp img {
             display: block;
             width: 150px;
             position: relative;
             margin: auto; }
-          .slide .content-container .content .main-content .st-pagelp #st-menu-hp ul {
+          .slide .content-container .content .main-content .st-pagelp #st-menu-hp ul, .slide .content-container .content .main-content .st-pagelp #cd-menu-hp ul {
             display: block;
             margin-top: 20px;
             padding: 0; }
-            .slide .content-container .content .main-content .st-pagelp #st-menu-hp ul li {
+            .slide .content-container .content .main-content .st-pagelp #st-menu-hp ul li, .slide .content-container .content .main-content .st-pagelp #cd-menu-hp ul li {
               margin: 0px;
               padding: 17px 0px;
               border-top: 1px solid white;
               list-style-type: none; }
-            .slide .content-container .content .main-content .st-pagelp #st-menu-hp ul li:first-of-type {
+            .slide .content-container .content .main-content .st-pagelp #st-menu-hp ul li:first-of-type, .slide .content-container .content .main-content .st-pagelp #cd-menu-hp ul li:first-of-type {
               border-top: none; }
       .slide .content-container .content .main-content .st-page2 div.video-container {
         margin: 0 auto;
@@ -364,7 +370,9 @@ div.references {
           display: block;
           margin-left: 200px; }
       .slide .content-container .content .main-content .intro {
-        width: 100%; }
+        position: absolute;
+        width: 100%;
+        padding-top: 10px; }
       .slide .content-container .content .main-content .left {
         width: 50%;
         height: 100%;
@@ -431,14 +439,20 @@ div.references {
             text-align: left; }
           .slide .content-container .content .main-content .left .st-page3 .list {
             margin-bottom: 80px; }
-        .slide .content-container .content .main-content .left .st-page4 img {
-          width: 360px;
-          display: block;
-          position: relative;
-          margin: 0px auto; }
-        .slide .content-container .content .main-content .left .st-page4 li {
-          font-size: 16px;
-          line-height: 20px; }
+        .slide .content-container .content .main-content .left .st-page4 {
+          padding-top: 120px; }
+          .slide .content-container .content .main-content .left .st-page4 img {
+            float: right;
+            width: 360px;
+            position: relative;
+            margin: 0px auto; }
+          .slide .content-container .content .main-content .left .st-page4 ul {
+            margin-bottom: 20px; }
+          .slide .content-container .content .main-content .left .st-page4 li {
+            font-size: 16px;
+            line-height: 20px; }
+          .slide .content-container .content .main-content .left .st-page4 h3 {
+            margin-bottom: 30px; }
         .slide .content-container .content .main-content .left .st-page5 div.sub-header {
           width: 100%;
           text-align: center;
@@ -474,7 +488,7 @@ div.references {
             font-weight: bold; }
         .slide .content-container .content .main-content .left .cd-page2 {
           margin-top: 40px;
-          padding: 0px 20px; }
+          padding: 40px 20px; }
           .slide .content-container .content .main-content .left .cd-page2 img {
             position: relative;
             display: block;
@@ -648,14 +662,20 @@ div.references {
               position: relative;
               top: -343px;
               left: 415px; }
-        .slide .content-container .content .main-content .right .st-page4 img {
-          width: 360px;
-          display: block;
-          position: relative;
-          margin: 0px auto; }
-        .slide .content-container .content .main-content .right .st-page4 li {
-          font-size: 16px;
-          line-height: 20px; }
+        .slide .content-container .content .main-content .right .st-page4 {
+          padding-top: 120px; }
+          .slide .content-container .content .main-content .right .st-page4 img {
+            float: right;
+            width: 360px;
+            position: relative;
+            margin: 0px auto; }
+          .slide .content-container .content .main-content .right .st-page4 ul {
+            margin-bottom: 20px; }
+          .slide .content-container .content .main-content .right .st-page4 li {
+            font-size: 16px;
+            line-height: 20px; }
+          .slide .content-container .content .main-content .right .st-page4 h3 {
+            margin-bottom: 30px; }
         .slide .content-container .content .main-content .right .st-page5 div.sub-header {
           width: 100%;
           text-align: center;
@@ -719,7 +739,7 @@ div.references {
               width: 455px; }
         .slide .content-container .content .main-content .right .cd-page2 {
           margin-top: 40px;
-          padding: 0px 20px; }
+          padding: 40px 20px; }
           .slide .content-container .content .main-content .right .cd-page2 img {
             position: relative;
             display: block;
