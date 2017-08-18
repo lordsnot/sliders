@@ -238,12 +238,38 @@ div.references {
   #section0 .ego-logo img {
     width: 187px; }
 
-#section0 #that-dude {
+#section0 #alan-gon {
   width: 300px;
   left: 73px;
   top: 458px;
   z-index: 500;
   opacity: 0; }
+
+#section0 .fp-copy {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  color: #007dc3;
+  width: 300px;
+  opacity: 0; }
+
+#section0 #alan-copy {
+  font-size: 20px;
+  line-height: 26px;
+  left: 72px;
+  top: 716px; }
+
+#section0 #time-copy-1 {
+  font-size: 16px;
+  line-height: 20px;
+  left: 277px;
+  top: 991px; }
+
+#section0 #time-copy-2 {
+  font-size: 16px;
+  line-height: 20px;
+  left: 612px;
+  top: 991px; }
 
 #section0 #timeline-img {
   left: 1500px;
@@ -272,7 +298,7 @@ div.references {
       font-size: 40px;
       margin-bottom: 6px; }
       .slide .content-container .content .header.smaller span.capitalize {
-        text-transform: capitalize; }
+        text-transform: uppercase; }
     .slide .content-container .content .main-content {
       width: 100%;
       height: 100%;
@@ -412,7 +438,7 @@ div.references {
           .slide .content-container .content .main-content .left .st-page3 div.title {
             margin-bottom: 50px; }
           .slide .content-container .content .main-content .left .st-page3 div.summary {
-            margin-top: 50px; }
+            margin-top: 20px; }
           .slide .content-container .content .main-content .left .st-page3 span.fineprint {
             font-size: 16px;
             line-height: 20px; }
@@ -434,8 +460,8 @@ div.references {
           .slide .content-container .content .main-content .left .st-page4 ul {
             margin-bottom: 20px; }
           .slide .content-container .content .main-content .left .st-page4 li {
-            font-size: 16px;
-            line-height: 20px; }
+            font-size: 20px;
+            line-height: 26px; }
           .slide .content-container .content .main-content .left .st-page4 h3 {
             margin-bottom: 30px; }
         .slide .content-container .content .main-content .left .st-page5 div.sub-header {
@@ -478,13 +504,13 @@ div.references {
             position: relative;
             display: block;
             margin: auto;
+            margin-top: 100px;
             width: 70%; }
-          .slide .content-container .content .main-content .left .cd-page2 h3 {
-            margin-bottom: 30px; }
           .slide .content-container .content .main-content .left .cd-page2 ul {
             font-size: 20px;
             line-height: 26px;
-            margin-top: 40px; }
+            margin-top: 20px;
+            margin-bottom: 40px; }
         .slide .content-container .content .main-content .left .cd-page3 div.product-container {
           display: flex;
           margin: 20px 10px; }
@@ -517,7 +543,8 @@ div.references {
         height: 100%;
         float: right; }
         .slide .content-container .content .main-content .right .st-page1 {
-          margin-top: 100px; }
+          margin-top: 100px;
+          padding-left: 40px; }
           .slide .content-container .content .main-content .right .st-page1 li {
             line-height: 28px; }
           .slide .content-container .content .main-content .right .st-page1 svg#hex-bullet-1 {
@@ -533,13 +560,13 @@ div.references {
               z-index: 10000; }
             .slide .content-container .content .main-content .right .st-page1 div.right-copy-1 {
               top: -53px;
-              left: 100px;
+              left: 70px;
               color: white;
               font-size: 20px;
               line-height: 40px; }
             .slide .content-container .content .main-content .right .st-page1 div.right-copy-2 {
               top: -53px;
-              left: 100px;
+              left: 70px;
               color: white;
               font-size: 20px;
               line-height: 40px; }
@@ -593,7 +620,7 @@ div.references {
           .slide .content-container .content .main-content .right .st-page3 div.title {
             margin-bottom: 50px; }
           .slide .content-container .content .main-content .right .st-page3 div.summary {
-            margin-top: 50px; }
+            margin-top: 20px; }
           .slide .content-container .content .main-content .right .st-page3 span.fineprint {
             font-size: 16px;
             line-height: 20px; }
@@ -657,8 +684,8 @@ div.references {
           .slide .content-container .content .main-content .right .st-page4 ul {
             margin-bottom: 20px; }
           .slide .content-container .content .main-content .right .st-page4 li {
-            font-size: 16px;
-            line-height: 20px; }
+            font-size: 20px;
+            line-height: 26px; }
           .slide .content-container .content .main-content .right .st-page4 h3 {
             margin-bottom: 30px; }
         .slide .content-container .content .main-content .right .st-page5 div.sub-header {
@@ -729,13 +756,13 @@ div.references {
             position: relative;
             display: block;
             margin: auto;
+            margin-top: 100px;
             width: 70%; }
-          .slide .content-container .content .main-content .right .cd-page2 h3 {
-            margin-bottom: 30px; }
           .slide .content-container .content .main-content .right .cd-page2 ul {
             font-size: 20px;
             line-height: 26px;
-            margin-top: 40px; }
+            margin-top: 20px;
+            margin-bottom: 40px; }
         .slide .content-container .content .main-content .right .cd-page3 div.product-container {
           display: flex;
           margin: 20px 10px; }
