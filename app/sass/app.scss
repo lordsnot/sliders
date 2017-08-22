@@ -498,6 +498,17 @@ div.references-cta {
 
 }
 
+div.references-cta.st-page1 {
+  
+  // top: -190px;
+  left: 0px;
+
+}
+
+div.left.page-1-left {
+  height: 400px !important;
+  // background-color: grey;
+}
 
 div.references {
 
@@ -742,6 +753,7 @@ div.references {
 
           #page1-hex1 {
             position: relative;
+            display: inline;
             top: 80px;
             left: 60px;
           }
@@ -782,7 +794,17 @@ div.references {
             margin-bottom: 80px;
           }
         }
-        .st-page4 { @include st-page4(); }
+        .st-page4 { 
+          @include st-page4(); 
+          svg {
+            &#hex-bullet-1 {
+              position: relative;
+              top: 57px;
+              left: -14px;
+              z-index: -1000;
+            }
+          }
+        }
         .st-page5 { @include st-page5(); }
         .st-page6 { @include st-page6(); } 
 
@@ -987,8 +1009,17 @@ div.references {
 
         .st-page4 {
           @include st-page4();
-
+          svg {
+            &#hex-bullet-2 {
+              position: relative;
+              top: 57px;
+              left: -14px;
+              z-index: -1000;
+            }
+          }
         }
+        
+
 
         .st-page5 {
           @include st-page5()
@@ -1100,7 +1131,7 @@ div.references {
         
         display: table;
 
-        div.content {
+        div.content-mandatories {
 
           display: table-row;
 

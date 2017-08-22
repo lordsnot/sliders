@@ -192,7 +192,7 @@
 			    		</div>
 			    		<div class="main-content">
 			    			<div class="menu-cta st"><img src="img/menu.png"></div>
-			    			<div class="left">
+			    			<div class="left page-1-left">
 			    				<div class="st-page1">
 									<svg id="page1-hex1" version="1.1" xmlns="http://www.w3.org/2000/svg" width="390" height="338" viewbox="0 0 390 337.749907475931">	
 										<path fill="#007dc3" d="M0 168.8749537379655L97.5 0L292.5 0L390 168.8749537379655L292.5 337.749907475931L97.5 337.749907475931Z"></path>
@@ -205,7 +205,7 @@
 
 									<svg id="page1-hex3" version="1.1" xmlns="http://www.w3.org/2000/svg" width="390" height="338" viewbox="0 0 390 337.749907475931">	<path fill="#007dc3" d="M0 168.8749537379655L97.5 0L292.5 0L390 168.8749537379655L292.5 337.749907475931L97.5 337.749907475931Z"></path>
 									</svg>
-									<div id="hex3-copy" class="hex-copy">Up to <br/><span class="fact">41.5<sup>%</sup></span><br/> prevalence rate in<br/>aged care&nbsp;populations<sup>2</sup></div>
+									<div id="hex3-copy" class="hex-copy">Up to <br/><span class="fact">41.5<sup>%</sup></span><br/> prevalence rate in<br/>aged care&nbsp;populations<sup>2</sup></div> 
 				    			</div>
 				    		</div>
 
@@ -249,8 +249,8 @@
 
 			    			</div>
 			    		</div>
-			    		<div class="references-cta">i</div>
-			    		<div class="references" data-status="closed">
+			    		<div class="references-cta st-page1">i</div>
+			    		<div class="references st-page1" data-status="closed">
 			    			<strong>References:</strong>
 							<ol>
 								<li><span>Wound Management Innovation Co-operative Research Centre. Accessed July 2017 from: 
@@ -374,8 +374,8 @@
 			    			<div class="left">
 			    				<div class="st-page4">
 		    						<img src="img/QV_Gentle_Wash_product.png" alt="Gentle Wash"/>
-			    					<h3>1. Cleanse with QV Gentle Wash</h3>
-
+									<svg id="hex-bullet-1" 	version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewbox="0 0 40 34.64101615137754"><path fill="#007dc3" d="M0 17.32050807568877L10 0L30 0L40 17.32050807568877L30 34.64101615137754L10 34.64101615137754Z"></path></svg>
+			    					<h3>1&nbsp;&nbsp;&nbsp;Cleanse with QV Gentle Wash</h3>
 			    					<div>
 				    					<ul>
 				    						<li>15% glycerin</li>
@@ -398,7 +398,8 @@
 			    			<div class="right">
 			    				<div class="st-page4">
 		    						<img  src="img/QV_Skin_Lotion_product.png" alt="Skin Lotion"/>
-			    					<h3>2. Moisturise with QV Skin Lotion<br/>twice daily</h3>
+		    						<svg id="hex-bullet-2" 	version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewbox="0 0 40 34.64101615137754"><path fill="#007dc3" d="M0 17.32050807568877L10 0L30 0L40 17.32050807568877L30 34.64101615137754L10 34.64101615137754Z"></path></svg>
+			    					<h3>2&nbsp;&nbsp;&nbsp;Moisturise with QV Skin Lotion<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;twice daily</h3>
 			    					<div>
 				    					<ul>
 				    						<li>pH balanced</li>
@@ -542,7 +543,7 @@
 			    		<div class="main-content">
 			    			<div class="menu-cta st"><img src="img/menu.png"></div>
 		    				<div class="mandatories">
-				    			<div class="content">
+				    			<div class="content-mandatories">
 					    			<div class="wraptocenter">
 					    				<img src="img/ego-logo.png" alt="logo"/>
 						    			<p>
@@ -961,7 +962,7 @@
 			    			<div class="menu-cta cd"><img src="img/menu.png"></div>
 		    				
 		    				<div class="mandatories">
-				    			<div class="content">
+				    			<div class="content-mandatories">
 					    			<div class="wraptocenter">
 					    				<img src="img/ego-logo.png" alt="logo"/>
 						    			<p>
@@ -1235,11 +1236,18 @@ $('.nav-menu-item').on('click', function(){
 		                    var data = dataset.data[index];
 		                    if( data == 5.76) { 
 		                    	data = data + "*"; 
+		                    	
+		                    	ctx.fillText("├",bar._model.x+5, bar._model.y + 7);
 		                    	ctx.font = Chart.helpers.fontString("20", Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
-		                    	ctx.fillText("45",bar._model.x+77, bar._model.y + 11);
+		                    	ctx.fillText("──",bar._model.x+27, bar._model.y + 11);
+		                    	ctx.fillText("45",bar._model.x+65, bar._model.y + 11);
 		                    	ctx.font = tempFont;
-		                    	ctx.fillText("%",bar._model.x+94, bar._model.y + 3);
-		                    	ctx.fillText("REDUCTION",bar._model.x+140, bar._model.y + 8);
+		                    	ctx.fillText("%",bar._model.x+82, bar._model.y + 3);
+		                    	ctx.fillText("REDUCTION",bar._model.x+128, bar._model.y + 8);
+		                    	ctx.font = Chart.helpers.fontString("20", Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+		                    	ctx.fillText("──",bar._model.x+190, bar._model.y + 11);
+		                    	ctx.font = Chart.helpers.fontString("15", Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+		                    	ctx.fillText("┤",bar._model.x+210, bar._model.y + 7);
 		                   	}
 		                   	ctx.fillText(data, bar._model.x-23, bar._model.y + 8);
 		                });
