@@ -1026,7 +1026,11 @@ div.references {
         }
 
         .st-page6 {
-          @include st-page6()
+          @include st-page6();
+          img {
+            width: 700px;
+            margin: 0 auto;
+          }
         }
 
         .cd-page1 {

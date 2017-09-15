@@ -721,6 +721,9 @@ div.references {
           margin-top: 40px;
           padding: 40px;
           font-size: 25px; }
+          .slide .content-container .content .main-content .right .st-page6 img {
+            width: 700px;
+            margin: 0 auto; }
         .slide .content-container .content .main-content .right .cd-page1 {
           font-size: 36px;
           line-height: 44px; }
